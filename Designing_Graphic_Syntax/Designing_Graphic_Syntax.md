@@ -109,6 +109,7 @@ flowchart TD
 ```
 
 
+---
 
 
 ```mermaid
@@ -119,6 +120,7 @@ graph LR
 ```
 
 
+---
 
 
 
@@ -129,6 +131,7 @@ flowchart LR
     node1 --- node2
 ```
 
+---
 
 
 ```mermaid
@@ -138,6 +141,8 @@ flowchart TD
 ```
 
 
+
+---
 
 
 
@@ -158,17 +163,16 @@ config:
 %%{
   init: {
     'flowchart': { 'htmlLabels': false, 'curve': 'linear' },
-    'fontFamily': 'Monaco',
+    'fontFamily': 'Comic Sans MS',
     'themeVariables': {
-      'primaryColor': '#ffcc80', %% Orange for default nodes
+      'primaryColor': '#ffcc80',
       'primaryTextColor': '#111111',
       'lineColor': '#e0e0e0',
       'primaryBorderColor': '#27AE60',
-      'secondaryColor': '#81c784',  %% Green for secondary
+      'secondaryColor': '#81c784',
       'secondaryTextColor': '#6C3483',
       'secondaryBorderColor': '#A569BD',
-      'tertiaryColor': '#ef9a9a'     %% Red for tertiary
-      'fontSize': '15px'
+      'fontSize': '10px'
     }
   }
 }%%
@@ -177,10 +181,34 @@ flowchart TD
 
 ```
 
+---
 
 
 
+<!-- 
+## Types of web font
 
+Helvetica (sans-serif)
+Arial (sans-serif)
+Arial Black (sans-serif)
+Verdana (sans-serif)
+Tahoma (sans-serif)
+Trebuchet MS (sans-serif)
+Impact (sans-serif)
+Gill Sans (sans-serif)
+Times New Roman (serif)
+Georgia (serif)
+Palatino (serif)
+Baskerville (serif)
+Andalé Mono (monospace)
+Courier (monospace)
+Lucida (monospace)
+Monaco (monospace)
+Bradley Hand (cursive)
+Brush Script MT (cursive)
+Luminari (fantasy)
+Comic Sans MS (cursive) 
+-->
 
 
 
