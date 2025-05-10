@@ -318,7 +318,7 @@ config:
 %% basis, bumpX, bumpY, cardinal, catmullRom, linear, monotoneX, monotoneY, natural, step, stepAfter, stepBefore.
 %%{
   init: {
-    'flowchart': { 'htmlLabels': false, 'curve': 'linear' },
+    'flowchart': { 'htmlLabels': false, 'curve': 'basis' },
     'fontFamily': 'Bradley Hand',
     'themeVariables': {
       'primaryColor': '#ffcc80',
