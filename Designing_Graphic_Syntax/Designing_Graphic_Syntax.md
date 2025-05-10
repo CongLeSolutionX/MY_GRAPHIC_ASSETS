@@ -141,6 +141,48 @@ flowchart TD
 
 
 
+```mermaid
+---
+title: "CongLeSolutionX"
+author: "Cong Le"
+version: "1.0"
+license(s): "MIT, CC BY 4.0"
+copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
+config:
+  layout: dagre
+  theme: base
+---
+%%%%%%%% Mermaid version v11.4.1-b.14
+%%%%%%%% Available curve styles include the following keywords:
+%% basis, bumpX, bumpY, cardinal, catmullRom, linear, monotoneX, monotoneY, natural, step, stepAfter, stepBefore.
+%%{
+  init: {
+    'flowchart': { 'htmlLabels': false, 'curve': 'linear' },
+    'fontFamily': 'Monaco',
+    'themeVariables': {
+      'primaryColor': '#ffcc80', %% Orange for default nodes
+      'primaryTextColor': '#111111',
+      'lineColor': '#e0e0e0',
+      'primaryBorderColor': '#27AE60',
+      'secondaryColor': '#81c784',  %% Green for secondary
+      'secondaryTextColor': '#6C3483',
+      'secondaryBorderColor': '#A569BD',
+      'tertiaryColor': '#ef9a9a'     %% Red for tertiary
+      'fontSize': '15px'
+    }
+  }
+}%%
+flowchart TD
+    My_Meme@{ img: "https://github.com/CongLeSolutionX/MY_GRAPHIC_ASSETS/blob/Designing_graphic_syntax/MY_MEME/My-meme-orange-microphone.png?raw=true", label: "Ăn uống gì chưa ngừi đẹp?", pos: "b", w: 200, h: 150, constraint: "on" }
+
+```
+
+
+
+
+
+
+
 
 
 ---
