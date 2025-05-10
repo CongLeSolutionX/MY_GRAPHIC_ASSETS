@@ -319,10 +319,10 @@ config:
 %%{
   init: {
     'flowchart': { 'htmlLabels': false, 'curve': 'linear' },
-    'fontFamily': 'Monaco',
+    'fontFamily': 'Bradley Hand',
     'themeVariables': {
       'primaryColor': '#ffcc80',
-      'primaryTextColor': '#22FF21',
+      'primaryTextColor': '#000',
       'lineColor': '#F8B229',
       'primaryBorderColor': '#27AE60',
       'secondaryColor': '#81c784',
