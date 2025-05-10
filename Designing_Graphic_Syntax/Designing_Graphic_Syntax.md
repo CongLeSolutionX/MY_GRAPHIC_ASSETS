@@ -123,6 +123,15 @@ graph LR
 
 
 ```mermaid
+flowchart LR
+    node1(["<p style='margin:0'><img src='https://github.com/CongLeSolutionX/MY_GRAPHIC_ASSETS/blob/main/MY_MEME/My-meme-orange.png?raw=true' width='40'/><br/>CongLeSolutionX</p>"])
+    node2(["Ăn uống gì chưa ngừi đẹp?"])
+    node1 --- node2
+```
+
+
+
+```mermaid
 flowchart TD
     My_Meme@{ img: "https://github.com/CongLeSolutionX/MY_GRAPHIC_ASSETS/blob/Designing_graphic_syntax/MY_MEME/My-meme-orange-microphone.png?raw=true", label: "CongLeSolutionX", pos: "b", w: 200, h: 150, constraint: "on" }
 
