@@ -323,6 +323,7 @@ config:
     'themeVariables': {
       'primaryColor': '#ffcc80',
       'primaryTextColor': '#000',
+      'textColor': '#FFF',
       'lineColor': '#F8B229',
       'primaryBorderColor': '#27AE60',
       'secondaryColor': '#81c784',
