@@ -338,9 +338,11 @@ flowchart TD
     A("fab:fa-youtube Starter Guide")
     B("fab:fa-youtube Make Flowchart")
     n1@{ icon: "fa:gem", pos: "b", h: 24}
+    
     C("fa:fa-book-open Learn More")
     D{"Use the editor"}
     n2(Many shapes)@{ shape: delay}
+    
     E(fa:fa-shapes Visual Editor)
     F("fa:fa-chevron-up Add node in toolbar")
     G("fa:fa-comment-dots AI chat")
@@ -348,8 +350,12 @@ flowchart TD
     I("fa:fa-code Text")
     J(fa:fa-arrow-left Type Mermaid syntax)
 
+    My_Meme@{ img: "https://github.com/CongLeSolutionX/MY_GRAPHIC_ASSETS/blob/Designing_graphic_syntax/MY_MEME_ICONS/Orange-Cloud-Search-Icon-Base-Color-Black-1024x1024.png?raw=true", label: "Ăn uống gì chưa ngừi đẹp?", pos: "b", w: 200, h: 150, constraint: "on" }
+
+
+
 %% Edge connections between nodes
-    A --> B --> C --> n1 & D & n2
+    A --> My_Meme --> B --> C --> n1 & D & n2
     D -- Build and Design --> E --> F
     D -- Use AI --> G --> H
     D -- Mermaid js --> I --> J
