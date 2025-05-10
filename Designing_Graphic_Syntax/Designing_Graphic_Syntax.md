@@ -110,6 +110,12 @@ graph LR
 
 
 
+```mermaid
+flowchart TD
+    A@{ img: "https://github.com/CongLeSolutionX/MY_GRAPHIC_ASSETS/blob/main/MY_MEME/My-meme-orange.png?raw=true", label: "CongLeSolutionX", pos: "t", w: 200, h: 150, constraint: "off" }
+
+```
+
 ---
 
 
