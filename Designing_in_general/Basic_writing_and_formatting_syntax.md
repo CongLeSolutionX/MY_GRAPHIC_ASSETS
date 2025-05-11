@@ -459,6 +459,26 @@ Let's rename \*our-new-project\* to \*our-old-project\*.
 
 Let's rename \*our-new-project\* to \*our-old-project\*.
 
+Markdown provides backslash escapes for the following characters:
+
+````
+\   backslash
+`   backtick
+*   asterisk
+_   underscore
+{}  curly braces
+[]  square brackets
+()  parentheses
+#   hash mark
++   plus sign
+-   minus sign (hyphen)
+.   dot
+!   exclamation mark
+````
+
+
+For more information on backslashes, see Daring Fireball's [Markdown Syntax](https://daringfireball.net/projects/markdown/syntax#backslash).
+
 
 
 ----
