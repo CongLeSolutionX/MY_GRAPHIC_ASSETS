@@ -480,6 +480,10 @@ _   underscore
 For more information on backslashes, see Daring Fireball's [Markdown Syntax](https://daringfireball.net/projects/markdown/syntax#backslash).
 
 
+> [!NOTE]
+> The Markdown formatting will not be ignored in the title of an issue or a pull request.
+
+
 
 ----
 
