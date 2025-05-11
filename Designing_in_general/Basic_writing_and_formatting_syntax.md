@@ -413,6 +413,43 @@ We can display an image from our repository, add a link to an online image, or u
 > For more information,
 > see [Uploading assets](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#uploading-assets).
 
+> [!NOTE]
+> When we want to display an image that is in our repository, 
+> use relative links instead of absolute links.
+
+Here are some examples for using relative links to display an image.
+
+**The syntax for it is below:**
+
+````
+| Context                                                    | Relative Link                                                              |
+|------------------------------------------------------------|----------------------------------------------------------------------------|
+| In a .md file on the same branch                           | `/assets/images/electrocat.png`                                            |
+| In a .md file on another branch                            | `/../main/assets/images/electrocat.png`                                    |
+| In issues, pull requests and comments of the repository    | `../blob/main/assets/images/electrocat.png?raw=true`                       |
+| In a .md file in another repository                        | `/../../../../github/docs/blob/main/assets/images/electrocat.png`          |
+| In issues, pull requests and comments of another repository | `../../../github/docs/blob/main/assets/images/electrocat.png?raw=true` |
+````
+
+**The rendered result is below:**
+
+| Context                                                    | Relative Link                                                              |
+|------------------------------------------------------------|----------------------------------------------------------------------------|
+| In a .md file on the same branch                           | `/assets/images/electrocat.png`                                            |
+| In a .md file on another branch                            | `/../main/assets/images/electrocat.png`                                    |
+| In issues, pull requests and comments of the repository    | `../blob/main/assets/images/electrocat.png?raw=true`                       |
+| In a .md file in another repository                        | `/../../../../github/docs/blob/main/assets/images/electrocat.png`          |
+| In issues, pull requests and comments of another repository | `../../../github/docs/blob/main/assets/images/electrocat.png?raw=true` |
+
+
+**Explanation of Formatting:**
+
+1.  **Table Structure:** The content is formatted using Markdown's pipe table syntax (`|` for columns, `---` for the header separator).
+2.  **Code Formatting:** The "Relative Link" values are enclosed in backticks (`` ` ``). This ensures they are displayed as literal strings (code spans) rather than being interpreted as actual links or having any special characters processed. This is important for showing file paths and URLs as text.
+
+
+
+
 
 
 ----
