@@ -113,6 +113,26 @@ The rendered table result is:
 
 
 
+To include a pipe `|` as content within your cell, use a `\` before the pipe:
+
+````
+| Name     | Character |
+| ---      | ---       |
+| Backtick | `         |
+| Pipe     | \|        |
+````
+
+
+The rendered table result is:
+
+
+| Name     | Character |
+| ---      | ---       |
+| Backtick | `         |
+| Pipe     | \|        |
+
+
+
 
 
 ---
