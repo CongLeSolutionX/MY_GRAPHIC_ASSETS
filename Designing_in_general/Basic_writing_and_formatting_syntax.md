@@ -405,7 +405,7 @@ You can add emoji to your writing by typing `:EMOJICODE:`, a colon followed by t
 Typing `:` will bring up a list of suggested emoji.
 The list will filter as you type, so once you find the emoji you're looking for, press **Tab** or **Enter** to complete the highlighted result.
 
-> [!NOTE]
+> [!TIP]
 > For a full list of available emoji and codes, see [the Emoji-Cheat-Sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md).
 
 
