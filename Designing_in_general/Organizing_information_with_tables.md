@@ -63,6 +63,7 @@ The rendered code block will look like below:
 
 
 >Tip: Enabling a fixed-width font in all comment fields on GitHub:
+>
 >For more information, see [About writing and formatting on GitHub](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/about-writing-and-formatting-on-github#enabling-fixed-width-fonts-in-the-editor).
 
 
