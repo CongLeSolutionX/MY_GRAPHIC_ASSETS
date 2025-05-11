@@ -207,6 +207,48 @@ function test() {
 }
 ```
 
+---
+
+
+To display triple backticks in a fenced code block, wrap them inside quadruple backticks.
+
+
+````
+```
+Look! You can see my backticks.
+```
+````
+
+
+---
+
+
+## [Syntax highlighting](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks#syntax-highlighting)
+
+
+You can add an optional language identifier to enable syntax highlighting in your fenced code block.
+
+Syntax highlighting changes the color and style of source code to make it easier to read.
+
+For example, to syntax highlight Ruby code:
+
+````
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
+````
+
+This will display the code block with syntax highlighting as below:
+
+
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
+
 
 
 
