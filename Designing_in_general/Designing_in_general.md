@@ -255,8 +255,27 @@ GitHub use [Linguist](https://github.com/github-linguist/linguist) to perform la
 We can find out which keywords are valid in [the languages YAML file](https://github.com/github-linguist/linguist/blob/main/lib/linguist/languages.yml).
 
 
+---
+
+## [Supported color models](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#supported-color-models)
 
 
+In issues, pull requests, and discussions, you can call out colors within a sentence by using backticks. A supported color model within backticks will display a visualization of the color.
+
+```
+The background color is `\#ffffff` for light mode and `\#000000` for dark mode.
+
+```
+
+![Screenshot of rendered GitHub Markdown showing how HEX values within backticks create small circles of color, here white and then black.](https://docs.github.com/assets/cb-11643/images/help/writing/supported-color-models-rendered.png)
+
+
+
+
+
+Here are the currently supported color models.
+
+ColorSyntaxExampleOutputHEX``#RRGGBB````#0969DA``![Screenshot of rendered GitHub Markdown showing how HEX value \#0969DA appears with a blue circle.](https://docs.github.com/assets/cb-1558/images/help/writing/supported-color-models-hex-rendered.png)RGB``rgb(R,G,B)````rgb(9, 105, 218)``![Screenshot of rendered GitHub Markdown showing how RGB value 9, 105, 218 appears with a blue circle.](https://docs.github.com/assets/cb-1962/images/help/writing/supported-color-models-rgb-rendered.png)HSL``hsl(H,S,L)````hsl(212, 92%, 45%)``![Screenshot of rendered GitHub Markdown showing how HSL value 212, 92%, 45% appears with a blue circle.](https://docs.github.com/assets/cb-2066/images/help/writing/supported-color-models-hsl-rendered.png)
 
 
 
