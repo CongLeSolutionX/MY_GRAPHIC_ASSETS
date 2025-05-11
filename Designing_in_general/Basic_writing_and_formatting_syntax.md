@@ -450,6 +450,16 @@ Here are some examples for using relative links to display an image.
 1.  **Table Structure:** The content is formatted using Markdown's pipe table syntax (`|` for columns, `---` for the header separator).
 2.  **Code Formatting:** The "Relative Link" values are enclosed in backticks (`` ` ``). This ensures they are displayed as literal strings (code spans) rather than being interpreted as actual links or having any special characters processed. This is important for showing file paths and URLs as text.
 
+![Loading my octocat](https://raw.githubusercontent.com/CongLeSolutionX/MY_GRAPHIC_ASSETS/refs/heads/Designing_in_General/my_octocat.png)
+
+
+
+> [!NOTE]
+> For more information, see [Relative Links](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#relative-links).
+
+### [The Picture element](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#the-picture-element)
+
+The `<picture>` HTML element is supported.
 
 
 
