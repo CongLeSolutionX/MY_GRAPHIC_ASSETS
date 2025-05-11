@@ -62,9 +62,37 @@ The rendered code block will look like below:
 | git diff | Show file differences that haven't been staged |
 
 
->Tip: Enabling a fixed-width font in all comment fields on GitHub:
+>Tip: 
+> Enabling a fixed-width font in all comment fields on GitHub.
 >
 >For more information, see [About writing and formatting on GitHub](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/about-writing-and-formatting-on-github#enabling-fixed-width-fonts-in-the-editor).
+
+
+---
+
+## [Formatting content within your table](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-tables#formatting-content-within-your-table)
+
+You can use [formatting](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) such as links, inline code blocks, and text styling within your table:
+
+
+````
+| Command | Description |
+| --- | --- |
+| `git status` | List all *new or modified* files |
+| `git diff` | Show file differences that **haven't been** staged |
+````
+
+The rendered table result is:
+
+| Command | Description |
+| --- | --- |
+| `git status` | List all *new or modified* files |
+| `git diff` | Show file differences that **haven't been** staged |
+
+
+---
+
+
 
 
 
