@@ -65,6 +65,12 @@ stateDiagram
 
 ---
 
+## [Using TopoJSON](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams#using-topojson)
+
+For example, you can create a TopoJSON map by specifying coordinates and shapes.
+
+
+
 
 ```geojson
 {
