@@ -431,6 +431,9 @@ Here are some examples for using relative links to display an image.
 | In issues, pull requests and comments of another repository | `../../../github/docs/blob/main/assets/images/electrocat.png?raw=true` |
 ````
 
+> [!NOTE]
+> The last two relative links in the table above will work for images in a private repository <br/>only if the viewer has at least read access<br/> to the private repository that contains these images.
+
 **The rendered result is below:**
 
 | Context                                                    | Relative Link                                                              |
