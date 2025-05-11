@@ -249,6 +249,13 @@ markdown = Redcarpet.new("Hello World!")
 puts markdown.to_html
 ```
 
+GitHub use [Linguist](https://github.com/github-linguist/linguist) to perform language detection and to select [third-party grammars](https://github.com/github-linguist/linguist/blob/main/vendor/README.md) for syntax highlighting. 
+
+
+We can find out which keywords are valid in [the languages YAML file](https://github.com/github-linguist/linguist/blob/main/lib/linguist/languages.yml).
+
+
+
 
 
 
