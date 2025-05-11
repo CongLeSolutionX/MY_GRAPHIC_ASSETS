@@ -554,7 +554,11 @@ A footnote can also have multiple lines[^2].
 [^2]: To add line breaks within a footnote, prefix new lines with 2 spaces.
   This is a second line.
 
-
+> [!NOTE]
+> The position of a footnote in your Markdown does not influence where the footnote will be rendered.
+> We can write a footnote right after our reference to the footnote,
+> and the footnote will still render at the bottom of the Markdown.
+> Footnotes are not supported in wikis.
 
 
 ---
