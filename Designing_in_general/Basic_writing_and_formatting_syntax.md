@@ -406,6 +406,13 @@ Then, wrap the link for the image in parentheses `()`.
 ![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://myoctocat.com/assets/images/base-octocat.svg)
 
 
+GitHub supports embedding images into your issues, pull requests, discussions, comments and `.md` files.
+We can display an image from our repository, add a link to an online image, or upload an image.
+
+> [!TIP]
+> For more information,
+> see [Uploading assets](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#uploading-assets).
+
 
 
 ----
