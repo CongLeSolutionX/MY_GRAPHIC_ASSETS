@@ -191,6 +191,25 @@ endsolid
 ```
 
 
+---
+
+# [Creating and highlighting code blocks](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks)
+
+
+## [Fenced code blocks](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks#fenced-code-blocks)
+
+
+You can create fenced code blocks by placing triple backticks ``` before and after the code block.
+
+```
+function test() {
+  console.log("notice the blank line before this function?");
+}
+```
+
+
+
+
 
 
 ---
