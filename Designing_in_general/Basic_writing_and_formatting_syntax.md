@@ -84,6 +84,125 @@ The rendered result is:
 
 ----
 
+
+# [Creating and highlighting code blocks](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks)
+
+
+## [Fenced code blocks](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks#fenced-code-blocks)
+
+
+You can create fenced code blocks by placing triple backticks ``` before and after the code block.
+
+```
+function test() {
+  console.log("notice the blank line before this function?");
+}
+```
+
+---
+
+
+To display triple backticks in a fenced code block, wrap them inside quadruple backticks.
+
+
+````
+```
+Look! You can see my backticks.
+```
+````
+
+
+---
+
+
+## [Syntax highlighting](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks#syntax-highlighting)
+
+
+You can add an optional language identifier to enable syntax highlighting in your fenced code block.
+
+Syntax highlighting changes the color and style of source code to make it easier to read.
+
+For example, to syntax highlight Ruby code:
+
+````
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
+````
+
+This will display the code block with syntax highlighting as below:
+
+
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
+
+GitHub use [Linguist](https://github.com/github-linguist/linguist) to perform language detection and to select [third-party grammars](https://github.com/github-linguist/linguist/blob/main/vendor/README.md) for syntax highlighting. 
+
+
+We can find out which keywords are valid in [the languages YAML file](https://github.com/github-linguist/linguist/blob/main/lib/linguist/languages.yml).
+
+
+---
+
+## [Supported color models](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#supported-color-models)
+
+
+In issues, pull requests, and discussions, you can call out colors within a sentence by using backticks. A supported color model within backticks will display a visualization of the color.
+
+```
+The background color is `\#ffffff` for light mode and `\#000000` for dark mode.
+
+```
+
+![Screenshot of rendered GitHub Markdown showing how HEX values within backticks create small circles of color, here white and then black.](https://docs.github.com/assets/cb-11643/images/help/writing/supported-color-models-rendered.png)
+
+
+
+
+
+Here are the currently supported color models.
+
+**The syntax for the table is:**
+
+````
+| Color Model | Syntax          | Example                 | Output                                                                                                                               |
+|-------------|-----------------|-------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
+| HEX         | `` `#RRGGBB` ``   | `` `#0969DA` ``          | ![Screenshot of rendered GitHub Markdown showing how HEX value #0969DA appears with a blue circle.](https://docs.github.com/assets/cb-1558/images/help/writing/supported-color-models-hex-rendered.png)    |
+| RGB         | `` `rgb(R,G,B)` `` | `` `rgb(9, 105, 218)` `` | ![Screenshot of rendered GitHub Markdown showing how RGB value 9, 105, 218 appears with a blue circle.](https://docs.github.com/assets/cb-1962/images/help/writing/supported-color-models-rgb-rendered.png)  |
+| HSL         | `` `hsl(H,S,L)` `` | `` `hsl(212, 92%, 45%)` ``| ![Screenshot of rendered GitHub Markdown showing how HSL value 212, 92%, 45% appears with a blue circle.](https://docs.github.com/assets/cb-2066/images/help/writing/supported-color-models-hsl-rendered.png) |
+````
+
+**The rendered result table is:**
+
+| Color Model | Syntax          | Example                 | Output                                                                                                                               |
+|-------------|-----------------|-------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
+| HEX         | `` `#RRGGBB` ``   | `` `#0969DA` ``          | ![Screenshot of rendered GitHub Markdown showing how HEX value #0969DA appears with a blue circle.](https://docs.github.com/assets/cb-1558/images/help/writing/supported-color-models-hex-rendered.png)    |
+| RGB         | `` `rgb(R,G,B)` `` | `` `rgb(9, 105, 218)` `` | ![Screenshot of rendered GitHub Markdown showing how RGB value 9, 105, 218 appears with a blue circle.](https://docs.github.com/assets/cb-1962/images/help/writing/supported-color-models-rgb-rendered.png)  |
+| HSL         | `` `hsl(H,S,L)` `` | `` `hsl(212, 92%, 45%)` ``| ![Screenshot of rendered GitHub Markdown showing how HSL value 212, 92%, 45% appears with a blue circle.](https://docs.github.com/assets/cb-2066/images/help/writing/supported-color-models-hsl-rendered.png) |
+
+
+
+**Explanation of Changes and Formatting:**
+
+1.  **Table Structure:** The content is formatted using Markdown's pipe table syntax (`|` for columns, `---` for the header separator).
+2.  **Column Headers:** I've named the columns "Color Model", "Syntax", "Example", and "Output" based on the pattern of the input data.
+3.  **Code Formatting:**
+    *   The `Syntax` and `Example` values (like `#RRGGBB` or `#0969DA`) are enclosed in double backticks ` `` ` as per your input format. This creates an inline code span and also allows literal backticks inside if needed, though for these simple cases single backticks ` ` ` would also work fine in standard Markdown. GitHub Flavored Markdown renders ` ``code`` ` a bit differently, often with a red font by default in their documentation style. If you prefer standard monospaced rendering, single backticks (` `code` `) are more common. I've kept ` `` ` to match your input style more closely.
+4.  **Image Links:** The Markdown for the images (`![alt text](url)`) is kept as is, so they will render as images in the "Output" column when viewed on GitHub.
+
+
+
+
+
+---
+
+
+
 ## [Quoting text](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#quoting-text)
 
 
@@ -103,6 +222,43 @@ Text that is not a quote
 
 
 ---
+
+## [Quoting code](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#quoting-code)
+
+
+You can call out code or a command within a sentence with single backticks. 
+
+````
+Use `git status` to list all new or modified files that haven't yet been committed.
+````
+
+Use `git status` to list all new or modified files that haven't yet been committed.
+
+---
+
+To format code or text into its own distinct block, use triple backticks.
+
+
+````
+Some basic Git commands are:
+```
+git status
+git add
+git commit
+```
+````
+
+Some basic Git commands are:
+```
+git status
+git add
+git commit
+```
+
+
+For more information, see [Creating and highlighting code blocks](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks).
+
+
 
 
 
