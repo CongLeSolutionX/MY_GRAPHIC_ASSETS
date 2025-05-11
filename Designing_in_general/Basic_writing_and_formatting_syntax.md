@@ -379,6 +379,35 @@ The rendered result will look like below:
 [Contribution guidelines for this project](docs/CONTRIBUTING.md)
 
 
+----
+
+## [Footnotes](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#footnotes)
+
+
+You can add footnotes to your content.
+
+**Using this bracket syntax below:**
+
+````
+Here is a simple footnote[^1].
+
+A footnote can also have multiple lines[^2].
+
+[^1]: My reference.
+[^2]: To add line breaks within a footnote, prefix new lines with 2 spaces.
+  This is a second line.
+````
+
+**The rendered result looks like below:**
+
+Here is a simple footnote[^1].
+
+A footnote can also have multiple lines[^2].
+
+[^1]: My reference.
+[^2]: To add line breaks within a footnote, prefix new lines with 2 spaces.
+  This is a second line.
+
 
 
 
