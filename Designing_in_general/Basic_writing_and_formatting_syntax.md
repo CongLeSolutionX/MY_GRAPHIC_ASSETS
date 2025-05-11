@@ -426,6 +426,41 @@ To add an alert, use a special blockquote line specifying the alert type, follow
 > Advises about risks or negative outcomes of certain actions.
 
 
+---
+
+## [Hiding content with comments](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#hiding-content-with-comments)
+
+
+You can tell GitHub to hide content from the rendered Markdown by placing the content in an HTML comment.
+
+````
+<!-- This content will not appear in the rendered Markdown -->
+````
+
+<!-- This content will not appear in the rendered Markdown -->
+
+
+
+---
+
+
+## [Ignoring Markdown formatting](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#ignoring-markdown-formatting)
+
+
+You can tell GitHub to ignore (or escape) Markdown formatting by using `\` before the Markdown character.
+
+**The syntax is below:**
+
+````
+Let's rename \*our-new-project\* to \*our-old-project\*.
+````
+
+**The rendered result is below:**
+
+Let's rename \*our-new-project\* to \*our-old-project\*.
+
+
+
 ----
 
 ## [Footnotes](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#footnotes)
