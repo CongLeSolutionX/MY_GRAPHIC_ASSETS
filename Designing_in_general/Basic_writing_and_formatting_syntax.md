@@ -39,6 +39,7 @@ The rendered result is:
 
 ## [Styling text](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#styling-text)
 
+**The syntax for the table is:**
 
 ````
 | Style                   | Syntax                              | Keyboard shortcut                               | Example                                 | Output                                  |
@@ -53,7 +54,7 @@ The rendered result is:
 | Underline               | `<ins> </ins>`                     | None                                            | This is an <ins>underlined</ins> text  | This is an <ins>underlined</ins> text  |
 ````
 
-The rendered result table is: 
+**The rendered result table is** 
 
 
 | Style                   | Syntax                              | Keyboard shortcut                               | Example                                 | Output                                  |
@@ -86,13 +87,15 @@ The rendered result table is:
 ## [Quoting text](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#quoting-text)
 
 
-You can quote text with a \>.
+You can quote text with a \>, using the syntax below:
 
 ````
 Text that is not a quote
 
 > Text that is a quote
 ````
+
+As a result, the quote will be rendered as below:
 
 Text that is not a quote
 
