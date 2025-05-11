@@ -141,10 +141,15 @@ markdown = Redcarpet.new("Hello World!")
 puts markdown.to_html
 ```
 
-GitHub use [Linguist](https://github.com/github-linguist/linguist) to perform language detection and to select [third-party grammars](https://github.com/github-linguist/linguist/blob/main/vendor/README.md) for syntax highlighting. 
 
 
-We can find out which keywords are valid in [the languages YAML file](https://github.com/github-linguist/linguist/blob/main/lib/linguist/languages.yml).
+> [!TIP]
+> GitHub use [Linguist](https://github.com/github-linguist/linguist) to perform language detection
+> and to select [third-party grammars](https://github.com/github-linguist/linguist/blob/main/vendor/README.md) for syntax highlighting. 
+
+
+> [!TIP]
+> We can find out which keywords are valid in [the languages YAML file](https://github.com/github-linguist/linguist/blob/main/lib/linguist/languages.yml).
 
 
 ---
@@ -256,7 +261,9 @@ git commit
 ```
 
 
-For more information, see [Creating and highlighting code blocks](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks).
+
+> [!TIP]
+> For more information, see [Creating and highlighting code blocks](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks).
 
 
 
