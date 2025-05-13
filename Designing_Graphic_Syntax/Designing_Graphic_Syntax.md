@@ -30,9 +30,9 @@ flowchart LR
     A([Start])
 
     %% A node whose label is an <img> tag
-    B(["<img src='https://github.com/CongLeSolutionX/MY_GRAPHIC_ASSETS/blob/main/my_octocat.png?raw=true' width='80'/>"])
+    B(["<img src='https://github.com/CongLeSolutionX/MY_GRAPHIC_ASSETS/blob/main/my_octocat.png?raw=true' width='50'/>"])
 
-C(["<img src='https://raw.githubusercontent.com/CongLeSolutionX/MY_GRAPHIC_ASSETS/refs/heads/Designing_graphic_syntax/I_Asked_AI_Bots.jpg' width='80'/>"])
+C(["<img src='' width='50'/>"])
 
     %% Show normal edges
     A --> B
