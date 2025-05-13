@@ -328,7 +328,7 @@ config:
 %%%%%%%% Mermaid version v11.4.1-b.14
 %%{
   init: {
-    'flowchart': { 'htmlLabels': false },
+    'flowchart': { 'htmlLabels': true },
     'fontFamily': 'Brush Script MT',
     'themeVariables': {
       'primaryColor': '#fc82',
@@ -344,7 +344,7 @@ config:
 flowchart LR
     My_Meme@{ img: "https://raw.githubusercontent.com/CongLeSolutionX/MY_GRAPHIC_ASSETS/refs/heads/Designing_graphic_syntax/MY_MEME/My-meme-icon-design.png", label: "Ăn uống gì chưa ngừi đẹp?", pos: "b", w: 200, h: 150, constraint: "on" }
 
-    Closing_quote@{ shape: braces, label: "I'll leave this Earth empty-handed anyway!<br/>YOLO" }
+    Closing_quote@{ shape: braces, label: "I'll leave this Earth empty-handed anyway!<br/>YOLO :metal:" }
 
 My_Meme ~~~ Closing_quote
 
@@ -354,10 +354,6 @@ My_Meme ~~~ Closing_quote
 ```
 
 <br/> :metal: <br/> YOLO <br/> :love_you_gesture:
-
-
-
----
 
 
 
