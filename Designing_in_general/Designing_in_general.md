@@ -16,6 +16,35 @@ copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
 ---
 
 
+
+
+## Render HTML content - Span/Div
+
+
+<span style="font-family: Impact">My cursive text rendered as HTML code block</span>
+
+
+
+<span style="color: yellow">My cursive text rendered as HTML code block</span>
+
+
+<span style="text-decoration: underline">My cursive text rendered as HTML code block</span>
+
+
+<span style="font-style: italic">My cursive text rendered as HTML code block</span>
+
+
+<span style="font-weight: bold">My cursive text rendered as HTML code block</span>
+
+
+<span style="font-size: 26px">My cursive text rendered as HTML code block</span>
+
+
+
+----
+
+
+
 Configuration setting file: 
 https://mermaid.js.org/schemas/config.schema.json
 
