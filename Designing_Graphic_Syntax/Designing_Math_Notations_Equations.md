@@ -172,6 +172,16 @@ Alternatively, you can use the `/```math` code block syntax to display a math ex
 ```
 
 
+---
+
+
+>![TIP]
+> For math syntax reference: https://en.wikibooks.org/wiki/LaTeX/Mathematics
+>
+
+
+---
+
 
 
 
