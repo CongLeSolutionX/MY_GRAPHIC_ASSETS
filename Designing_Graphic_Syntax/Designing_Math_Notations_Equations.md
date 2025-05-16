@@ -181,8 +181,31 @@ Alternatively, you can use the `/```math` code block syntax to display a math ex
 
 ---
 
-```latex
+```math
 \mathfrak{Testing math font}
+```
+
+```math
+\mathscr{Testing math font}
+```
+
+
+```math
+\mathcal{Testing math font}
+```
+
+
+```math
+\mathbb{Testing math font}
+```
+
+
+----
+
+
+
+```math
+\boldsymbol{\beta} = (\beta_1,\beta_2,\dotsc,\beta_n)
 ```
 
 
