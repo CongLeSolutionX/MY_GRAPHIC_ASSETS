@@ -16,6 +16,8 @@ source: https://people.math.sc.edu/Burkardt/data/stla/stla.html
 
 ---
 
+HUMANOID is a humanoid shape.
+
 
 
 ```stl
