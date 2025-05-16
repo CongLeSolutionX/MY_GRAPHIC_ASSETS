@@ -10,9 +10,9 @@ source: https://people.math.sc.edu/Burkardt/data/stla/stla.html
 
 
 # CHANGE_ME
-> This content is dual-licensed under your choice of the following licenses:
+<!-- > This content is dual-licensed under your choice of the following licenses:
 > 1.  **MIT License:** For the code implementations in Swift and Mermaid provided in this document.
-> 2.  **Creative Commons Attribution 4.0 International License (CC BY 4.0):** For all other content, including the text, explanations, and the Mermaid diagrams and illustrations.
+> 2.  **Creative Commons Attribution 4.0 International License (CC BY 4.0):** For all other content, including the text, explanations, and the Mermaid diagrams and illustrations. -->
 
 ---
 
