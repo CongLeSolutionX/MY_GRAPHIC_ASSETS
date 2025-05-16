@@ -1,9 +1,10 @@
 ---
 created: 2025-05-16 05:31:26
-author: Cong Le
-version: "1.0"
-license(s): MIT, CC BY 4.0
-copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+author: NA
+version: "TBD"
+license(s): NA
+copyright: NA
+source: https://people.math.sc.edu/Burkardt/data/stla/stla.html
 ---
 
 # ASCII stereolithography files
@@ -16,6 +17,102 @@ copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
 
 ## BLOCK 
 BLOCK is a cube of side 100, using 12 triangular faces.
+
+The syntax is below:
+
+````
+```stl
+solid block100
+   facet normal -1.000000e+000 0.000000e+000 0.000000e+000
+      outer loop
+         vertex 0.000000e+000 1.000000e+002 1.000000e+002
+         vertex 0.000000e+000 1.000000e+002 0.000000e+000
+         vertex 0.000000e+000 0.000000e+000 1.000000e+002
+      endloop
+   endfacet
+   facet normal -1.000000e+000 0.000000e+000 0.000000e+000
+      outer loop
+         vertex 0.000000e+000 0.000000e+000 1.000000e+002
+         vertex 0.000000e+000 1.000000e+002 0.000000e+000
+         vertex 0.000000e+000 0.000000e+000 0.000000e+000
+      endloop
+   endfacet
+   facet normal 0.000000e+000 0.000000e+000 1.000000e+000
+      outer loop
+         vertex 1.000000e+002 1.000000e+002 1.000000e+002
+         vertex 0.000000e+000 1.000000e+002 1.000000e+002
+         vertex 1.000000e+002 0.000000e+000 1.000000e+002
+      endloop
+   endfacet
+   facet normal 0.000000e+000 0.000000e+000 1.000000e+000
+      outer loop
+         vertex 1.000000e+002 0.000000e+000 1.000000e+002
+         vertex 0.000000e+000 1.000000e+002 1.000000e+002
+         vertex 0.000000e+000 0.000000e+000 1.000000e+002
+      endloop
+   endfacet
+   facet normal 1.000000e+000 0.000000e+000 0.000000e+000
+      outer loop
+         vertex 1.000000e+002 1.000000e+002 0.000000e+000
+         vertex 1.000000e+002 1.000000e+002 1.000000e+002
+         vertex 1.000000e+002 0.000000e+000 0.000000e+000
+      endloop
+   endfacet
+   facet normal 1.000000e+000 0.000000e+000 0.000000e+000
+      outer loop
+         vertex 1.000000e+002 0.000000e+000 0.000000e+000
+         vertex 1.000000e+002 1.000000e+002 1.000000e+002
+         vertex 1.000000e+002 0.000000e+000 1.000000e+002
+      endloop
+   endfacet
+   facet normal 0.000000e+000 0.000000e+000 -1.000000e+000
+      outer loop
+         vertex 0.000000e+000 1.000000e+002 0.000000e+000
+         vertex 1.000000e+002 1.000000e+002 0.000000e+000
+         vertex 0.000000e+000 0.000000e+000 0.000000e+000
+      endloop
+   endfacet
+   facet normal 0.000000e+000 0.000000e+000 -1.000000e+000
+      outer loop
+         vertex 0.000000e+000 0.000000e+000 0.000000e+000
+         vertex 1.000000e+002 1.000000e+002 0.000000e+000
+         vertex 1.000000e+002 0.000000e+000 0.000000e+000
+      endloop
+   endfacet
+   facet normal 0.000000e+000 1.000000e+000 0.000000e+000
+      outer loop
+         vertex 1.000000e+002 1.000000e+002 1.000000e+002
+         vertex 1.000000e+002 1.000000e+002 0.000000e+000
+         vertex 0.000000e+000 1.000000e+002 1.000000e+002
+      endloop
+   endfacet
+   facet normal 0.000000e+000 1.000000e+000 0.000000e+000
+      outer loop
+         vertex 0.000000e+000 1.000000e+002 1.000000e+002
+         vertex 1.000000e+002 1.000000e+002 0.000000e+000
+         vertex 0.000000e+000 1.000000e+002 0.000000e+000
+      endloop
+   endfacet
+   facet normal 0.000000e+000 -1.000000e+000 0.000000e+000
+      outer loop
+         vertex 1.000000e+002 0.000000e+000 0.000000e+000
+         vertex 1.000000e+002 0.000000e+000 1.000000e+002
+         vertex 0.000000e+000 0.000000e+000 0.000000e+000
+      endloop
+   endfacet
+   facet normal 0.000000e+000 -1.000000e+000 0.000000e+000
+      outer loop
+         vertex 0.000000e+000 0.000000e+000 0.000000e+000
+         vertex 1.000000e+002 0.000000e+000 1.000000e+002
+         vertex 0.000000e+000 0.000000e+000 1.000000e+002
+      endloop
+   endfacet
+endsolid
+```
+````
+
+The rendered result is below: 
+
 
 ```stl
 solid block100
@@ -107,11 +204,11 @@ endsolid
 ```
 
 
----
+<!-- ---
 >**Licenses:**
 >
 >- **MIT License:**  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) - Full text in [LICENSE](LICENSE) file.
 >
----
+--- -->
 
 <!-- - **Creative Commons Attribution 4.0 International:** [![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/88x31.png)](LICENSE-CC-BY) - Legal details in [LICENSE-CC-BY](LICENSE-CC-BY) and at [Creative Commons official site](http://creativecommons.org/licenses/by/4.0/). -->
