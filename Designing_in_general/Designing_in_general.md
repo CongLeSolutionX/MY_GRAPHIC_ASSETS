@@ -312,7 +312,45 @@ endsolid
 <script src="https://embed.github.com/view/3d/skalnik/secret-bear-clip/master/stl/clip.stl"></script>
 ```
 
+---
 
+
+
+## ASCII STL syntax
+
+
+```stl
+   solid cube_corner
+          facet normal 0.0 -1.0 0.0
+            outer loop
+              vertex 0.0 0.0 0.0
+              vertex 1.0 0.0 0.0
+              vertex 0.0 0.0 1.0
+            endloop
+          endfacet
+          facet normal 0.0 0.0 -1.0
+            outer loop
+              vertex 0.0 0.0 0.0
+              vertex 0.0 1.0 0.0
+              vertex 1.0 0.0 0.0
+            endloop
+          endfacet
+          facet normal -1.0 0.0 0.0
+            outer loop
+              vertex 0.0 0.0 0.0
+              vertex 0.0 0.0 1.0
+              vertex 0.0 1.0 0.0
+            endloop
+          endfacet
+          facet normal 0.577 0.577 0.577
+            outer loop
+              vertex 1.0 0.0 0.0
+              vertex 0.0 1.0 0.0
+              vertex 0.0 0.0 1.0
+            endloop
+          endfacet
+        endsolid
+```
 
 
 ---
