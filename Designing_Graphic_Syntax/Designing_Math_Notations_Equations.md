@@ -17,6 +17,15 @@ copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
 
 
 
+> [!NOTE]
+> My current Obsidian notebooks are set up to KaTex syntax. 
+> Thus, when pushing my notes and diagrams to the Github repos (currently accepting LaTex syntax for math notations), it will cause missing information and notions as diagrams below.
+> WIP: Updating my local Obsidian notebook setup for math syntax.
+>
+
+
+
+
 ```mermaid
 ---
 title: "CHANGE_ME_DADDY"
