@@ -19,7 +19,7 @@ copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
 
 > [!NOTE]
 > My current Obsidian notebooks are set up to recognize [KaTex syntax](https://katex.org).<br/>
-> Thus, when pushing my notes and diagrams to the Github repos (currently accepting [LaTex syntax](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes) for math notations), math notations in the diagrams below are not recognized by Github server.
+> Thus, when pushing my notes and diagrams to the Github repos (currently accepting [LaTex syntax](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes) for math notations),<br/>math notations in the diagrams below are not recognized by Github server.<br/>
 > WIP: Updating my local Obsidian notebook setup for math syntax.
 >
 
