@@ -339,6 +339,94 @@ requirement "__test_req__" {
     test_req <- copies - test_entity2
 ```
 
+---
+
+## Directions in Requirement Diagrams
+
+- `TB` - Top to Bottom (default)
+- `BT` - Bottom to Top
+- `LR` - Left to Right
+- `RL` - Right to Left
+
+```mermaid-example
+requirementDiagram
+
+direction LR
+
+requirement test_req {
+    id: 1
+    text: the test text.
+    risk: high
+    verifymethod: test
+}
+
+element test_entity {
+    type: simulation
+}
+
+test_entity - satisfies -> test_req
+```
+
+
+```mermaid
+requirementDiagram
+
+direction LR
+
+requirement test_req {
+    id: 1
+    text: the test text.
+    risk: high
+    verifymethod: test
+}
+
+element test_entity {
+    type: simulation
+}
+
+test_entity - satisfies -> test_req
+```
+
+---
+
+## Styling for Requirement Diagrams
+
+```mermaid-example
+requirementDiagram
+
+requirement test_req {
+    id: 1
+    text: styling example
+    risk: low
+    verifymethod: test
+}
+
+element test_entity {
+    type: simulation
+}
+
+style test_req fill:#ffa,stroke:#000, color: green
+style test_entity fill:#f9f,stroke:#333, color: blue
+```
+
+```mermaid
+requirementDiagram
+
+requirement test_req {
+    id: 1
+    text: styling example
+    risk: low
+    verifymethod: test
+}
+
+element test_entity {
+    type: simulation
+}
+
+style test_req fill:#ffa,stroke:#000, color: green
+style test_entity fill:#f9f,stroke:#333, color: blue
+```
+
 
 ---
 
