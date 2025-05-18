@@ -578,7 +578,9 @@ After processing the tags, the remaining metadata items are interpreted as follo
 | `<length>`                                           | End date of preceding task                          | Start date + `length`                                 | n/a      |
 | `until <otherTaskId>`                                | End date of preceding task                          | Start date of previously specified task `otherTaskID` | n/a      |
 
-> [!NOTE}
+
+
+> [!NOTE]
 > Support for keyword `until` was added in (v10.9.0+).<br/>
 > This can be used to define a task which is running until some other specific task or milestone starts.
 
