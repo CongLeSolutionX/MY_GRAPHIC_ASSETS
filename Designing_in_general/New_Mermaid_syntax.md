@@ -421,7 +421,35 @@ classDiagram
 ```
 
 
+---
 
+## Default class
+
+
+```
+classDef default fill:#f2f,stroke:#333,stroke-width:4px;
+```
+
+
+````
+```mermaid
+classDiagram
+  class Animal:::pink
+  class Mineral
+
+  classDef default fill:#f96,color:red
+  classDef pink color:#f2f
+```
+````
+
+```mermaid
+classDiagram
+  class Animal:::pink
+  class Mineral
+
+  classDef default fill:#f96,color:red
+  classDef pink color:#f2f
+```
 
 
 ---
