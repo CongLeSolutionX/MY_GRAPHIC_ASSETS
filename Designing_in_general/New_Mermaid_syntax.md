@@ -1168,6 +1168,56 @@ architecture-beta
 
 ```
 
+---
+
+# Mermaid Kanban Diagram
+
+## Defining Columns
+
+```mermaid-example
+kanban
+  column1[Column Title]
+    task1[Task Description]
+```
+
+```mermaid
+kanban
+  column1[Column Title]
+    task1[Task Description]
+```
+
+Syntax: 
+
+```md
+columnId[Column Title]
+```
+- columnId: A unique identifier for the column.
+- [Column Title]: The title displayed on the column header.
+
+
+---
+
+## Supported Metadata Keys
+
+
+```
+•	assigned: Specifies who is responsible for the task.
+•	ticket: Links the task to a ticket or issue number.
+•	priority: Indicates the urgency of the task. Allowed values: 'Very High', 'High', 'Low' and 'Very Low'
+```
+
+```mermaid-example
+kanban
+todo[Todo]
+  id3[Update Database Function]@{ ticket: MC-2037, assigned: 'knsv', priority: 'High' }
+```
+
+```mermaid
+kanban
+todo[Todo]
+  id3[Update Database Function]@{ ticket: MC-2037, assigned: 'knsv', priority: 'High' }
+```
+
 
 
 ---
