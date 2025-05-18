@@ -389,7 +389,7 @@ test_entity - satisfies -> test_req
 
 ---
 
-## Styling for Requirement Diagrams
+## Direct Styling for Requirement Diagrams
 
 ```mermaid-example
 requirementDiagram
@@ -425,6 +425,48 @@ element test_entity {
 
 style test_req fill:#ffa,stroke:#000, color: green
 style test_entity fill:#f9f,stroke:#333, color: blue
+```
+
+---
+
+
+## Reusable Styling for Requirement Diagrams
+
+
+```mermaid-example
+requirementDiagram
+
+requirement test_req {
+    id: 1
+    text: "class styling example"
+    risk: low
+    verifymethod: test
+}
+
+element test_entity {
+    type: simulation
+}
+
+classDef important fill:#f96,stroke:#333,stroke-width:4px
+classDef test fill:#ffa,stroke:#000
+```
+
+```mermaid
+requirementDiagram
+
+requirement test_req {
+    id: 1
+    text: "class styling example"
+    risk: low
+    verifymethod: test
+}
+
+element test_entity {
+    type: simulation
+}
+
+classDef important fill:#f96,stroke:#333,stroke-width:4px
+classDef test fill:#ffa,stroke:#000
 ```
 
 
