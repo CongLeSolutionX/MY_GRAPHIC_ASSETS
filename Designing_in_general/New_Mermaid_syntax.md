@@ -348,10 +348,10 @@ click ShapeWithLink_2 href "https://www.apple.com" "This is a tooltip for a link
 
 ```mermaid
 classDiagram
-class Shape
-link Shape "https://www.google.com" "This is a tooltip for a link"
-class Shape2
-click Shape2 href "https://www.apple.com" "This is a tooltip for a link"
+class ShapeWithLink_1
+link ShapeWithLink_1 "https://www.google.com" "This is a tooltip for a link"
+class ShapeWithLink_2
+click ShapeWithLink_2 href "https://www.apple.com" "This is a tooltip for a link"
 ```
 
 
