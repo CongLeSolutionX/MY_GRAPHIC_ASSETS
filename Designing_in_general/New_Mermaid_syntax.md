@@ -278,7 +278,40 @@ classDiagram
 
 ---
 
-## Gantt Chart
+## Define Namespace
+
+A namespace groups classes.
+
+
+````
+```mermaid
+classDiagram
+namespace BaseShapes {
+    class Triangle
+    class Rectangle {
+      double width
+      double height
+    }
+}
+```
+````
+
+```mermaid
+classDiagram
+namespace BaseShapes {
+    class Triangle
+    class Rectangle {
+      double width
+      double height
+    }
+}
+```
+
+
+
+---
+
+# Gantt Chart
 
 
 ````
