@@ -469,6 +469,52 @@ classDef important fill:#f96,stroke:#333,stroke-width:4px
 classDef test fill:#ffa,stroke:#000
 ```
 
+---
+
+
+## Combined Example
+
+```mermaid-example
+requirementDiagram
+
+requirement test_req:::important {
+    id: 1
+    text: "class styling example"
+    risk: low
+    verifymethod: test
+}
+
+element test_entity {
+    type: simulation
+}
+
+classDef important font-weight:bold
+
+class test_entity important
+style test_entity fill:#f9f,stroke:#333
+```
+
+```mermaid
+requirementDiagram
+
+requirement test_req:::important {
+    id: 1
+    text: "class styling example"
+    risk: low
+    verifymethod: test
+}
+
+element test_entity {
+    type: simulation
+}
+
+classDef important font-weight:bold
+
+class test_entity important
+style test_entity fill:#f9f,stroke:#333
+```
+
+
 
 ---
 
