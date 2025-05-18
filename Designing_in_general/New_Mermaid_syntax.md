@@ -666,6 +666,9 @@ gantt
     Final milestone : milestone, m2, 18:08, 4m
 ```
 
+---
+
+
 ### Vertical Markers
 
 The `vert` keyword lets you add vertical lines to your Gantt chart, making it easy to highlight important dates like deadlines, events, or checkpoints. These markers extend across the entire chart and are positioned based on the date you provide. Unlike milestones, vertical markers don’t take up a row. They’re purely visual reference points that help break up the timeline and make important moments easier to spot.
@@ -689,6 +692,9 @@ gantt
     Task B : 8m
     Final vert : vert, v2, 17:58, 4m
 ```
+
+----
+
 
 ## Setting dates
 
@@ -766,8 +772,11 @@ The following formatting strings are supported:
 | %%     | a literal "%" character                                                                    |
 
 
-> [!INFO]
+
+> [!TIP]
 > More info in: <https://github.com/d3/d3-time-format/tree/v4.0.0#locale_format>
+
+
 
 ---
 
@@ -785,7 +794,7 @@ The pattern is:
 /^([1-9][0-9]*)(millisecond|second|minute|hour|day|week|month)$/;
 ```
 
->[!INFO]
+> [!TIP]
 > More info in: <https://github.com/d3/d3-time#interval_every>
 
 Week-based `tickInterval`s start the week on sunday by default. If you wish to specify another weekday on which the `tickInterval` should start, use the `weekday` option:
@@ -802,8 +811,7 @@ gantt
   weekday monday
 ```
 
-
-> [!WARNING] 
+> [!WARNING]
 > `millisecond` and `second` support was added in v10.3.0
 
 
