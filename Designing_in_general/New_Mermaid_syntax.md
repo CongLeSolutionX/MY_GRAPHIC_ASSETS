@@ -354,6 +354,28 @@ class ShapeWithLink_2
 click ShapeWithLink_2 href "https://www.apple.com" "This is a tooltip for a link"
 ```
 
+---
+
+
+## Styling a node class diagram
+
+````
+```mermaid
+classDiagram
+  class Animal
+  class Mineral
+  style Animal fill:#f9f,stroke:#333,stroke-width:4px
+  style Mineral fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
+```
+````
+
+```mermaid
+classDiagram
+  class Animal
+  class Mineral
+  style Animal fill:#f9f,stroke:#333,stroke-width:4px
+  style Mineral fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
+```
 
 
 
