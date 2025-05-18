@@ -307,6 +307,55 @@ namespace BaseShapes {
 }
 ```
 
+---
+
+## Cardinality / Multiplicity on relations
+
+```md
+[classA] "cardinality1" [Arrow] "cardinality2" [ClassB]:LabelText
+```
+
+````
+```mermaid
+classDiagram
+    Customer "1" --> "*" Ticket
+    Student "1" --> "1..*" Course
+    Galaxy --> "many" Star : Contains
+```
+````
+
+```mermaid
+classDiagram
+    Customer "1" --> "*" Ticket
+    Student "1" --> "1..*" Course
+    Galaxy --> "many" Star : Contains
+```
+
+---
+
+
+## URL Link for class diagrams
+
+````
+```mermaid
+classDiagram
+class ShapeWithLink_1
+link ShapeWithLink_1 "https://www.google.com" "This is a tooltip for a link"
+class ShapeWithLink_2
+click ShapeWithLink_2 href "https://www.apple.com" "This is a tooltip for a link"
+```
+````
+
+```mermaid
+classDiagram
+class Shape
+link Shape "https://www.google.com" "This is a tooltip for a link"
+class Shape2
+click Shape2 href "https://www.apple.com" "This is a tooltip for a link"
+```
+
+
+
 
 
 ---
