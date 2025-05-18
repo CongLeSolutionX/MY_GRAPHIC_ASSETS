@@ -378,6 +378,50 @@ classDiagram
 ```
 
 
+---
+
+
+````
+```mermaid
+classDiagram
+    class Animal:::someclass
+    classDef someclass fill:#f96
+```
+````
+
+```mermaid
+classDiagram
+    class Animal:::someclass
+    classDef someclass fill:#f96
+```
+
+
+---
+
+
+
+````
+```mermaid
+classDiagram
+    class Animal:::someclass {
+        -int sizeInFeet
+        -canEat()
+    }
+    classDef someclass fill:#f96
+```
+````
+
+```mermaid
+classDiagram
+    class Animal:::someclass {
+        -int sizeInFeet
+        -canEat()
+    }
+    classDef someclass fill:#f96
+```
+
+
+
 
 
 ---
