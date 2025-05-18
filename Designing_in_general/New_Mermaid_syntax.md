@@ -243,7 +243,9 @@ stateDiagram-v2
     }
 ```
 
-You can also define transitions also between composite states:
+> [!TIP]
+> You can also define transitions also between composite states
+
 
 
 ```mermaid-example
