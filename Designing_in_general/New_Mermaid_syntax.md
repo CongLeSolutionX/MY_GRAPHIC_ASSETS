@@ -734,7 +734,10 @@ The following formatting options are supported:
 | `SSS`      | 0..999         | Thousandths of a second                                |
 | `Z ZZ`     | +12:00         | Offset from UTC as +-HH:mm, +-HHmm, or Z               |
 
-More info in: <https://day.js.org/docs/en/parse/string-format/>
+
+
+> [!TIP]
+> More info in: <https://day.js.org/docs/en/parse/string-format/>
 
 ### Output date format on the axis
 
