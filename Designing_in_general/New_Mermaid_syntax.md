@@ -600,7 +600,211 @@ gantt
     kiwi   :d, 2017-07-20, until b c
 ```
 
+---
 
+
+## Excludes - Weekends(v\11.0.0+)
+
+
+The `excludes` is an _optional_ attribute that accepts specific dates in YYYY-MM-DD format, days of the week ("sunday") or "weekends", but not the word "weekdays".
+These date will be marked on the graph, and be excluded from the duration calculation of tasks. Meaning that if there are excluded dates during a task interval, the number of 'skipped' days will be added to the end of the task to ensure the duration is as specified in the code.
+
+#### Weekend (v\11.0.0+)
+
+When excluding weekends, it is possible to configure the weekends to be either Friday and Saturday or Saturday and Sunday. By default weekends are Saturday and Sunday.
+To define the weekend start day, there is an _optional_ attribute `weekend` that can be added in a new line followed by either `friday` or `saturday`.
+
+```mermaid-example
+gantt
+    title A Gantt Diagram Excluding Fri - Sat weekends
+    dateFormat YYYY-MM-DD
+    excludes weekends
+    weekend friday
+    section Section
+        A task          :a1, 2024-01-01, 30d
+        Another task    :after a1, 20d
+```
+
+```mermaid
+gantt
+    title A Gantt Diagram Excluding Fri - Sat weekends
+    dateFormat YYYY-MM-DD
+    excludes weekends
+    weekend friday
+    section Section
+        A task          :a1, 2024-01-01, 30d
+        Another task    :after a1, 20d
+```
+
+### Section statements
+
+You can divide the chart into various sections, for example to separate different parts of a project like development and documentation.
+
+To do so, start a line with the `section` keyword and give it a name. (Note that unlike with the [title for the entire chart](#title), this name is _required_.
+
+### Milestones
+
+You can add milestones to the diagrams. Milestones differ from tasks as they represent a single instant in time and are identified by the keyword `milestone`. Below is an example on how to use milestones. As you may notice, the exact location of the milestone is determined by the initial date for the milestone and the "duration" of the task this way: _initial date_+_duration_/2.
+
+```mermaid-example
+gantt
+    dateFormat HH:mm
+    axisFormat %H:%M
+    Initial milestone : milestone, m1, 17:49, 2m
+    Task A : 10m
+    Task B : 5m
+    Final milestone : milestone, m2, 18:08, 4m
+```
+
+```mermaid
+gantt
+    dateFormat HH:mm
+    axisFormat %H:%M
+    Initial milestone : milestone, m1, 17:49, 2m
+    Task A : 10m
+    Task B : 5m
+    Final milestone : milestone, m2, 18:08, 4m
+```
+
+### Vertical Markers
+
+The `vert` keyword lets you add vertical lines to your Gantt chart, making it easy to highlight important dates like deadlines, events, or checkpoints. These markers extend across the entire chart and are positioned based on the date you provide. Unlike milestones, vertical markers don’t take up a row. They’re purely visual reference points that help break up the timeline and make important moments easier to spot.
+
+```mermaid-example
+gantt
+    dateFormat HH:mm
+    axisFormat %H:%M
+    Initial vert : vert, v1, 17:30, 2m
+    Task A : 3m
+    Task B : 8m
+    Final vert : vert, v2, 17:58, 4m
+```
+
+```mermaid
+gantt
+    dateFormat HH:mm
+    axisFormat %H:%M
+    Initial vert : vert, v1, 17:30, 2m
+    Task A : 3m
+    Task B : 8m
+    Final vert : vert, v2, 17:58, 4m
+```
+
+## Setting dates
+
+`dateFormat` defines the format of the date **input** of your gantt elements. How these dates are represented in the rendered chart **output** are defined by `axisFormat`.
+
+### Input date format
+
+The default input date format is `YYYY-MM-DD`. You can define your custom `dateFormat`.
+
+```markdown
+dateFormat YYYY-MM-DD
+```
+
+The following formatting options are supported:
+
+| Input      | Example        | Description                                            |
+| ---------- | -------------- | ------------------------------------------------------ |
+| `YYYY`     | 2014           | 4 digit year                                           |
+| `YY`       | 14             | 2 digit year                                           |
+| `Q`        | 1..4           | Quarter of year. Sets month to first month in quarter. |
+| `M MM`     | 1..12          | Month number                                           |
+| `MMM MMMM` | January..Dec   | Month name in locale set by `dayjs.locale()`           |
+| `D DD`     | 1..31          | Day of month                                           |
+| `Do`       | 1st..31st      | Day of month with ordinal                              |
+| `DDD DDDD` | 1..365         | Day of year                                            |
+| `X`        | 1410715640.579 | Unix timestamp                                         |
+| `x`        | 1410715640579  | Unix ms timestamp                                      |
+| `H HH`     | 0..23          | 24 hour time                                           |
+| `h hh`     | 1..12          | 12 hour time used with `a A`.                          |
+| `a A`      | am pm          | Post or ante meridiem                                  |
+| `m mm`     | 0..59          | Minutes                                                |
+| `s ss`     | 0..59          | Seconds                                                |
+| `S`        | 0..9           | Tenths of a second                                     |
+| `SS`       | 0..99          | Hundreds of a second                                   |
+| `SSS`      | 0..999         | Thousandths of a second                                |
+| `Z ZZ`     | +12:00         | Offset from UTC as +-HH:mm, +-HHmm, or Z               |
+
+More info in: <https://day.js.org/docs/en/parse/string-format/>
+
+### Output date format on the axis
+
+The default output date format is `YYYY-MM-DD`. You can define your custom `axisFormat`, like `2020-Q1` for the first quarter of the year 2020.
+
+```markdown
+axisFormat %Y-%m-%d
+```
+
+The following formatting strings are supported:
+
+| Format | Definition                                                                                 |
+| ------ | ------------------------------------------------------------------------------------------ |
+| %a     | abbreviated weekday name                                                                   |
+| %A     | full weekday name                                                                          |
+| %b     | abbreviated month name                                                                     |
+| %B     | full month name                                                                            |
+| %c     | date and time, as "%a %b %e %H:%M:%S %Y"                                                   |
+| %d     | zero-padded day of the month as a decimal number \[01,31]                                  |
+| %e     | space-padded day of the month as a decimal number \[ 1,31]; equivalent to %\_d             |
+| %H     | hour (24-hour clock) as a decimal number \[00,23]                                          |
+| %I     | hour (12-hour clock) as a decimal number \[01,12]                                          |
+| %j     | day of the year as a decimal number \[001,366]                                             |
+| %m     | month as a decimal number \[01,12]                                                         |
+| %M     | minute as a decimal number \[00,59]                                                        |
+| %L     | milliseconds as a decimal number \[000, 999]                                               |
+| %p     | either AM or PM                                                                            |
+| %S     | second as a decimal number \[00,61]                                                        |
+| %U     | week number of the year (Sunday as the first day of the week) as a decimal number \[00,53] |
+| %w     | weekday as a decimal number \[0(Sunday),6]                                                 |
+| %W     | week number of the year (Monday as the first day of the week) as a decimal number \[00,53] |
+| %x     | date, as "%m/%d/%Y"                                                                        |
+| %X     | time, as "%H:%M:%S"                                                                        |
+| %y     | year without century as a decimal number \[00,99]                                          |
+| %Y     | year with century as a decimal number                                                      |
+| %Z     | time zone offset, such as "-0700"                                                          |
+| %%     | a literal "%" character                                                                    |
+
+
+> [!INFO]
+> More info in: <https://github.com/d3/d3-time-format/tree/v4.0.0#locale_format>
+
+---
+
+### Axis ticks (v10.3.0+)
+
+The default output ticks are auto. You can custom your `tickInterval`, like `1day` or `1week`.
+
+```markdown
+tickInterval 1day
+```
+
+The pattern is:
+
+```javascript
+/^([1-9][0-9]*)(millisecond|second|minute|hour|day|week|month)$/;
+```
+
+>[!INFO]
+> More info in: <https://github.com/d3/d3-time#interval_every>
+
+Week-based `tickInterval`s start the week on sunday by default. If you wish to specify another weekday on which the `tickInterval` should start, use the `weekday` option:
+
+```mermaid-example
+gantt
+  tickInterval 1week
+  weekday monday
+```
+
+```mermaid
+gantt
+  tickInterval 1week
+  weekday monday
+```
+
+
+> [!WARNING] 
+> `millisecond` and `second` support was added in v10.3.0
 
 
 ---
