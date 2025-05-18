@@ -4,7 +4,7 @@ author: NA
 version: "TBD"
 license(s): NA
 copyright: NA
-source: "https://github.com/mermaid-js/mermaid/blob/develop/docs/syntax/radar.md"
+source: "https://github.com/mermaid-js/mermaid/tree/develop/docs"
 ---
 
 
@@ -16,7 +16,7 @@ source: "https://github.com/mermaid-js/mermaid/blob/develop/docs/syntax/radar.md
 
 ---
 
-## Radar Diagram (v11.6.0+)
+# Radar Diagram (v11.6.0+)
 
 
 ## Introduction
@@ -120,6 +120,199 @@ radar-beta
   curve c1{1,2,3,4,5}
   curve c2{5,4,3,2,1}
   curve c3{3,3,3,3,3}
+```
+
+
+
+---
+
+
+# Class Diagrams
+
+
+## Comments
+
+````
+```mermaid
+classDiagram
+%% This whole line is a comment classDiagram class Shape <<interface>>
+class Shape{
+    <<interface>>
+    noOfVertices
+    draw()
+}
+```
+````
+
+```mermaid
+classDiagram
+%% This whole line is a comment classDiagram class Shape <<interface>>
+class Shape{
+    <<interface>>
+    noOfVertices
+    draw()
+}
+```
+
+
+----
+
+## Setting the direction of the diagram
+
+
+````
+```mermaid
+classDiagram
+  direction RL
+  class Student {
+    -idCard : IdCard
+  }
+  class IdCard{
+    -id : int
+    -name : string
+  }
+  class Bike{
+    -id : int
+    -name : string
+  }
+  Student "1" --o "1" IdCard : carries
+  Student "1" --o "1" Bike : rides
+```
+````
+
+```mermaid
+classDiagram
+  direction RL
+  class Student {
+    -idCard : IdCard
+  }
+  class IdCard{
+    -id : int
+    -name : string
+  }
+  class Bike{
+    -id : int
+    -name : string
+  }
+  Student "1" --o "1" IdCard : carries
+  Student "1" --o "1" Bike : rides
+```
+
+
+---
+
+
+## Notes
+
+````
+```mermaid
+classDiagram
+    note "This is a general note"
+    note for MyClass "This is a note for a class"
+    class MyClass{
+    }
+```
+````
+
+```mermaid
+classDiagram
+    note "This is a general note"
+    note for MyClass "This is a note for a class"
+    class MyClass{
+    }
+```
+
+
+
+
+
+
+
+----
+
+
+## Requirement Diagram
+
+
+````
+```mermaid
+  requirementDiagram
+      accTitle: My Requirement Diagram
+      accDescr: My Requirement Diagram Description
+
+       requirement test_req {
+  id: 1
+  text: the test text.
+  risk: high
+  verifymethod: test
+  }
+
+  element test_entity {
+  type: simulation
+  }
+
+  test_entity - satisfies -> test_req
+
+```
+````
+
+```mermaid
+  requirementDiagram
+      accTitle: My Requirement Diagram
+      accDescr: My Requirement Diagram Description
+
+       requirement test_req {
+  id: 1
+  text: the test text.
+  risk: high
+  verifymethod: test
+  }
+
+  element test_entity {
+  type: simulation
+  }
+
+  test_entity - satisfies -> test_req
+
+```
+
+---
+
+## Gantt Chart
+
+
+````
+```mermaid
+   gantt
+      accTitle: My Gantt Chart Accessibility Title
+      accDescr: My Gantt Chart Accessibility Description
+
+    title A Gantt Diagram
+    dateFormat  YYYY-MM-DD
+    section Section
+    A task           :a1, 2014-01-01, 30d
+    Another task     :after a1  , 20d
+    section Another
+    Task in sec      :2014-01-12  , 12d
+    another task      : 24d
+
+```
+````
+
+```mermaid
+   gantt
+      accTitle: My Gantt Chart Accessibility Title
+      accDescr: My Gantt Chart Accessibility Description
+
+    title A Gantt Diagram
+    dateFormat  YYYY-MM-DD
+    section Section
+    A task           :a1, 2014-01-01, 30d
+    Another task     :after a1  , 20d
+    section Another
+    Task in sec      :2014-01-12  , 12d
+    another task      : 24d
+
 ```
 
 
