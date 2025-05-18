@@ -124,6 +124,174 @@ radar-beta
 
 ---
 
+# State Diagrams
+
+
+## Simple sample
+
+```mermaid-example
+---
+title: Simple sample
+---
+stateDiagram-v2
+    [*] --> Still
+    Still --> [*]
+
+    Still --> Moving
+    Moving --> Still
+    Moving --> Crash
+    Crash --> [*]
+```
+
+
+```mermaid
+---
+title: Simple sample
+---
+stateDiagram-v2
+    [*] --> Still
+    Still --> [*]
+
+    Still --> Moving
+    Moving --> Still
+    Moving --> Crash
+    Crash --> [*]
+```
+
+
+---
+
+## Composite states
+
+
+
+```mermaid-example
+stateDiagram-v2
+    [*] --> First
+    state First {
+        [*] --> second
+        second --> [*]
+    }
+
+    [*] --> NamedComposite
+    NamedComposite: Another Composite
+    state NamedComposite {
+        [*] --> namedSimple
+        namedSimple --> [*]
+        namedSimple: Another simple
+    }
+```
+
+```mermaid
+stateDiagram-v2
+    [*] --> First
+    state First {
+        [*] --> second
+        second --> [*]
+    }
+
+    [*] --> NamedComposite
+    NamedComposite: Another Composite
+    state NamedComposite {
+        [*] --> namedSimple
+        namedSimple --> [*]
+        namedSimple: Another simple
+    }
+```
+
+---
+
+
+## Composite states - 3 layers
+
+
+```mermaid-example
+stateDiagram-v2
+    [*] --> First
+
+    state First {
+        [*] --> Second
+
+        state Second {
+            [*] --> second
+            second --> Third
+
+            state Third {
+                [*] --> third
+                third --> [*]
+            }
+        }
+    }
+```
+
+```mermaid
+stateDiagram-v2
+    [*] --> First
+
+    state First {
+        [*] --> Second
+
+        state Second {
+            [*] --> second
+            second --> Third
+
+            state Third {
+                [*] --> third
+                third --> [*]
+            }
+        }
+    }
+```
+
+You can also define transitions also between composite states:
+
+
+```mermaid-example
+stateDiagram-v2
+    [*] --> First
+    First --> Second
+    First --> Third
+
+    state First {
+        [*] --> fir
+        fir --> [*]
+    }
+    state Second {
+        [*] --> sec
+        sec --> [*]
+    }
+    state Third {
+        [*] --> thi
+        thi --> [*]
+    }
+```
+
+```mermaid
+stateDiagram-v2
+    [*] --> First
+    First --> Second
+    First --> Third
+
+    state First {
+        [*] --> fir
+        fir --> [*]
+    }
+    state Second {
+        [*] --> sec
+        sec --> [*]
+    }
+    state Third {
+        [*] --> thi
+        thi --> [*]
+    }
+```
+
+> [!WARNING]
+> You cannot define transitions between internal states belonging to different composite states
+
+
+---
+
 
 # Requirement Diagram
 
