@@ -80,7 +80,22 @@ The rendered result is:
 6.  **Strikethrough Syntax:** The `Syntax` column lists `~~ ~~` or `~ ~` as per your input. Note that `~~text~~` is standard for GitHub Flavored Markdown, while `~text~` typically is not used for strikethrough in GFM. The example correctly uses `~~This was mistaken text~~`.
 
 
+---
 
+## Footnotes
+
+Here is a simple footnote[^1].
+
+A footnote can also have multiple lines[^2].
+
+[^1]: My reference.
+[^2]: To add line breaks within a footnote, prefix new lines with 2 spaces.
+  This is a second line.
+
+> [!NOTE]
+> The position of a footnote in your Markdown does not influence where the footnote will be rendered.<br/>
+> You can write a footnote right after your reference to the footnote,<br/>and the footnote will still render at the bottom of the Markdown.<br/>
+> Footnotes are not supported in wikis.
 
 ----
 
