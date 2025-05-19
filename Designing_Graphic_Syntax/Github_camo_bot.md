@@ -251,6 +251,41 @@ end note
 
 </details>
 
+---
+
+## Standalone diagram
+You can also use `@startmath/@endmath` to create standalone AsciiMath formula.
+
+
+<details open>
+<summary>Click to show/hide the full native PlantUML implementation with comment documentation.</summary>
+
+```plantuml
+@startmath
+f(t)=(a_0)/2 + sum_(n=1)^ooa_ncos((npit)/L)+sum_(n=1)^oo b_n\ sin((npit)/L)
+@endmath
+```
+
+</details>
+
+
+---
+
+
+Or use `@startlatex/@endlatex` to create standalone JLaTeXMath formula.
+
+<details open>
+<summary>Click to show/hide the full native PlantUML implementation with comment documentation.</summary>
+
+```plantuml
+@startlatex
+\sum_{i=0}^{n-1} (a_i + b_i^2)
+@endlatex
+```
+
+</details>
+
+
 
 
 ----
