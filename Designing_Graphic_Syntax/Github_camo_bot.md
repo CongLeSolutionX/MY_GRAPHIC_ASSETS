@@ -257,6 +257,24 @@ end note
 You can also use `@startmath/@endmath` to create standalone AsciiMath formula.
 
 
+![Standalone diagram using AsciiMath syntax](https://g.gravizo.com/source/svg/rendered_code_for_standalone_diagram_using_ascii_math_syntax_example?https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FMY_GRAPHIC_ASSETS%2Frefs%2Fheads%2FGithub_camo_bot_PlantUML%2FDesigning_Graphic_Syntax%2FGithub_camo_bot.md)
+
+
+<details>
+
+<summary>Rendered code for Standalone diagram using AsciiMath syntax example, by Github Camo crawler bot</summary>
+
+rendered_code_for_standalone_diagram_using_ascii_math_syntax_example
+
+@startmath
+f(t)=(a_0)/2 + sum_(n=1)^ooa_ncos((npit)/L)+sum_(n=1)^oo b_n\ sin((npit)/L)
+@endmath
+
+rendered_code_for_standalone_diagram_using_ascii_math_syntax_example
+
+</details>
+
+
 <details open>
 <summary>Click to show/hide the full native PlantUML implementation with comment documentation.</summary>
 
