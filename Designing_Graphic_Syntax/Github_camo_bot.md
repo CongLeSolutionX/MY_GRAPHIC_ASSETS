@@ -120,8 +120,6 @@ my_plant_uml_diagram_example
 
 </details>
 
-
-
 ---
 
 
@@ -129,7 +127,7 @@ my_plant_uml_diagram_example
 ### Custom svg code block
 
 
-![My custom svg code block example](https://g.gravizo.com/source/my_custom_svg_code_example?https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FMY_GRAPHIC_ASSETS%2Frefs%2Fheads%2FDesigning_graphic_syntax%2FDesigning_Graphic_Syntax%2FGithub_camo_bot.md)
+![My custom svg code block example](https://g.gravizo.com/source/svg/my_custom_svg_code_example?https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FMY_GRAPHIC_ASSETS%2Frefs%2Fheads%2FDesigning_graphic_syntax%2FDesigning_Graphic_Syntax%2FGithub_camo_bot.md)
 <details> 
 <summary>Rendered code for My custom svg code block example, by Github Camo crawler bot</summary>
 
