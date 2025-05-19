@@ -200,7 +200,6 @@ Foo -> Foo7: To queue
 
 my_custom_svg_code_example
 
-@gravizosvg
 {"svg": {
 		"@height": "450",
 		"@width": "450", 
