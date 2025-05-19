@@ -161,7 +161,9 @@ digraph G {
 
 
 ![PlantUML diagram example](https://g.gravizo.com/source/svg/my_plant_uml_diagram_example?https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FMY_GRAPHIC_ASSETS%2Frefs%2Fheads%2FDesigning_graphic_syntax%2FDesigning_Graphic_Syntax%2FGithub_camo_bot.md)
-<details> 
+
+<details>
+
 <summary>Rendered code for PlantUML diagram example, by Github Camo crawler bot</summary>
 
 my_plant_uml_diagram_example
