@@ -297,7 +297,11 @@ usecase usecase
 
 
 
-## Google Cloud Platform
+## Google Cloud Platform [^4]
+
+[^4]: Google Cloud Platform: https://crashedmind.github.io/PlantUMLHitchhikersGuide/gcp/gcp.html
+
+---
 
 
 ![Google Cloud Platform](https://g.gravizo.com/source/svg/rendered_code_for_google_cloud_platform_example?https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FMY_GRAPHIC_ASSETS%2Frefs%2Fheads%2FGithub_camo_bot_PlantUML%2FDesigning_Graphic_Syntax%2FGithub_camo_bot.md)
