@@ -4,6 +4,7 @@ author: Cong Le
 version: "1.0"
 license(s): MIT, CC BY 4.0
 copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
+source: https://www.gravizo.com
 ---
 
 
@@ -14,6 +15,8 @@ copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
 > 2.  **Creative Commons Attribution 4.0 International License (CC BY 4.0):** For all other content, including the text, explanations, and the Mermaid diagrams and illustrations.
 
 ---
+
+## Simple html tag
 
 
 <img src='https://g.gravizo.com/svg?
@@ -29,6 +32,28 @@ copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
  }
 '/>
 
+
+---
+
+## Using markdown syntax in github.com
+
+![Alt text](https://g.gravizo.com/svg?
+  digraph G {
+    size ="4,4";
+    main [shape=box];
+    main -> parse [weight=8];
+    parse -> execute;
+    main -> init [style=dotted];
+    main -> cleanup;
+    execute -> { make_string; printf}
+    init -> make_string;
+    edge [color=red];
+    main -> printf [style=bold,label="100 times"];
+    make_string [label="make a string"];
+    node [shape=box,style=filled,color=".7 .3 1.0"];
+    execute -> compare;
+  }
+)
 
 
 ---
