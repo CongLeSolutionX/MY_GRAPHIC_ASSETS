@@ -207,6 +207,57 @@ rendered_code_for_creole_and_html_example
 ----
 
 
+## Maths
+
+Within PlantUML, you can use AsciiMath notation:
+
+
+![AsciiMath notations](https://g.gravizo.com/source/svg/rendered_code_for_ascii_math_notation_example?https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FMY_GRAPHIC_ASSETS%2Frefs%2Fheads%2FGithub_camo_bot_PlantUML%2FDesigning_Graphic_Syntax%2FGithub_camo_bot.md)
+
+
+<details>
+
+<summary>Rendered code for AsciiMath notation example, by Github Camo crawler bot</summary>
+
+rendered_code_for_ascii_math_notation_example
+
+@startuml
+:<math>int_0^1f(x)dx</math>;
+:<math>x^2+y_1+z_12^34</math>;
+note right
+Try also
+<math>d/dxf(x)=lim_(h->0)(f(x+h)-f(x))/h</math>
+<math>P(y|bb"x") or f(bb"x")+epsilon</math>
+end note
+@enduml
+
+rendered_code_for_ascii_math_notation_example
+
+</details>
+
+
+<details open>
+<summary>Click to show/hide the full native PlantUML implementation with comment documentation.</summary>
+
+```plantuml
+@startuml
+:<math>int_0^1f(x)dx</math>;
+:<math>x^2+y_1+z_12^34</math>;
+note right
+Try also
+<math>d/dxf(x)=lim_(h->0)(f(x+h)-f(x))/h</math>
+<math>P(y|bb"x") or f(bb"x")+epsilon</math>
+end note
+@enduml
+```
+
+</details>
+
+
+
+----
+
+
 # PlantUML Hitchhikers Guide[^2]
 
 [^2]: PlantUML Hitchhikers Guide: https://crashedmind.github.io/PlantUMLHitchhikersGuide/index.html
