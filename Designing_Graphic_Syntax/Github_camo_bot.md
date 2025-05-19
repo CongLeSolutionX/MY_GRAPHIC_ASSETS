@@ -4,7 +4,7 @@ author: Cong Le
 version: "1.0"
 license(s): MIT, CC BY 4.0
 copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
-source: https://www.gravizo.com
+source: https://plantuml.com
 ---
 
 
@@ -190,9 +190,6 @@ my_plant_uml_diagram_example
 
 </details>
 
----
-
-
 ----
 
 ### PlantUML diagram example 2
@@ -226,7 +223,58 @@ my_second_plant_uml_diagram_example
 
 </details>
 
----
+-----
+
+
+### Creole and HTML
+
+
+![Creole and HTML example](https://g.gravizo.com/source/svg/rendered_code_for_creole_and_html_example?https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FMY_GRAPHIC_ASSETS%2Frefs%2Fheads%2FDesigning_graphic_syntax%2FDesigning_Graphic_Syntax%2FGithub_camo_bot.md)
+
+<details>
+
+<summary>Rendered code for Creole and HTML example, by Github Camo crawler bot</summary>
+
+rendered_code_for_creole_and_html_example
+
+@startuml
+participant Alice
+participant "The **Famous** Bob" as Bob
+
+Alice -> Bob : hello --there--
+... Some ~~long delay~~ ...
+Bob -> Alice : ok
+note left
+  This is **bold**
+  This is //italics//
+  This is ""monospaced""
+  This is --stroked--
+  This is __underlined__
+  This is ~~waved~~
+end note
+
+Alice -> Bob : A //well formatted// message
+note right of Alice
+ This is <back:cadetblue><size:18>displayed</size></back>
+ __left of__ Alice.
+end note
+note left of Bob
+ <u:red>This</u> is <color #118888>displayed</color>
+ **<color purple>left of</color> <s:red>Alice</strike> Bob**.
+end note
+note over Alice, Bob
+ <w:#FF33FF>This is hosted</w> by <img:https://plantuml.com/sourceforge.jpg>
+end note
+@enduml
+
+rendered_code_for_creole_and_html_example
+
+</details>
+
+
+----
+
+
 
 
 
