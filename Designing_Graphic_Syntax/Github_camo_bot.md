@@ -221,7 +221,6 @@ Within PlantUML, you can use AsciiMath notation:
 
 rendered_code_for_ascii_math_notation_example
 
-@startuml
 :<math>int_0^1f(x)dx</math>;
 :<math>x^2+y_1+z_12^34</math>;
 note right
@@ -229,7 +228,6 @@ Try also
 <math>d/dxf(x)=lim_(h->0)(f(x+h)-f(x))/h</math>
 <math>P(y|bb"x") or f(bb"x")+epsilon</math>
 end note
-@enduml
 
 rendered_code_for_ascii_math_notation_example
 
