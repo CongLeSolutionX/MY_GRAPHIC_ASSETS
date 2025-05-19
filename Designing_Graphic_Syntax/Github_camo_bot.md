@@ -4,7 +4,6 @@ author: Cong Le
 version: "1.0"
 license(s): MIT, CC BY 4.0
 copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
-source: https://plantuml.com
 ---
 
 
@@ -16,90 +15,15 @@ source: https://plantuml.com
 
 ---
 
-## Simple html tag
-
-
-<img src='https://g.gravizo.com/svg?
- digraph G {
-   main -> parse -> execute;
-   main -> init;
-   main -> cleanup;
-   execute -> make_string;
-   execute -> printf
-   init -> make_string;
-   main -> printf;
-   execute -> compare;
- }
-'/>
-
-
----
-
-## Using markdown syntax in github.com
-
-![Alt text](https://g.gravizo.com/svg?
-  digraph G {
-    size ="4,4";
-    main [shape=box];
-    main -> parse [weight=8];
-    parse -> execute;
-    main -> init [style=dotted];
-    main -> cleanup;
-    execute -> { make_string; printf}
-    init -> make_string;
-    edge [color=red];
-    main -> printf [style=bold,label="100 times"];
-    make_string [label="make a string"];
-    node [shape=box,style=filled,color=".7 .3 1.0"];
-    execute -> compare;
-  }
-)
-
----
-
-## Samples
-
-<img src='https://g.gravizo.com/svg?
-@startuml;
-
-actor User;
-participant "First Class" as A;
-participant "Second Class" as B;
-participant "Last Class" as C;
-
-User -> A: DoWork;
-activate A;
-
-A -> B: Create Request;
-activate B;
-
-B -> C: DoWork;
-activate C;
-
-C --> B: WorkDone;
-destroy C;
-
-B --> A: Request Created;
-deactivate B;
-
-A --> User: Done;
-deactivate A;
-
-@enduml
-'>
-
-
----
-
-
-## Using my techniques
 <!-- 
 https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FMY_GRAPHIC_ASSETS%2Frefs%2Fheads%2FDesigning_graphic_syntax%2FDesigning_Graphic_Syntax%2FGithub_camo_bot.md -->
 
 
 ---
 
-### DOT syntax example
+# DOT syntax
+
+## DOT syntax example
 
 
 
@@ -157,7 +81,13 @@ digraph G {
 
 ----
 
-### PlantUML diagram example
+
+# PlantUML[^1]
+
+[^1]: PlantUML website: https://plantuml.com/sitemap
+
+
+## PlantUML diagram example
 
 
 ![PlantUML diagram example](https://g.gravizo.com/source/svg/my_plant_uml_diagram_example?https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FMY_GRAPHIC_ASSETS%2Frefs%2Fheads%2FDesigning_graphic_syntax%2FDesigning_Graphic_Syntax%2FGithub_camo_bot.md)
@@ -192,7 +122,7 @@ my_plant_uml_diagram_example
 
 ----
 
-### PlantUML diagram example 2
+## PlantUML diagram example 2
 
 
 ![PlantUML diagram example](https://g.gravizo.com/source/svg/my_second_plant_uml_diagram_example?https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FMY_GRAPHIC_ASSETS%2Frefs%2Fheads%2FDesigning_graphic_syntax%2FDesigning_Graphic_Syntax%2FGithub_camo_bot.md)
@@ -226,7 +156,7 @@ my_second_plant_uml_diagram_example
 -----
 
 
-### Creole and HTML
+## Creole and HTML
 
 
 ![Creole and HTML example](https://g.gravizo.com/source/svg/rendered_code_for_creole_and_html_example?https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FMY_GRAPHIC_ASSETS%2Frefs%2Fheads%2FDesigning_graphic_syntax%2FDesigning_Graphic_Syntax%2FGithub_camo_bot.md)
