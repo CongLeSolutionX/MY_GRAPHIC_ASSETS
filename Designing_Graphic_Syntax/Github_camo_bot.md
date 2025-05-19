@@ -86,6 +86,8 @@ digraph G {
 
 [^1]: PlantUML website: https://plantuml.com/sitemap
 
+----
+
 
 ## PlantUML diagram example - Syntax style 1
 
@@ -204,6 +206,195 @@ rendered_code_for_creole_and_html_example
 
 ----
 
+
+# PlantUML Hitchhikers Guide[^2]
+
+[^2]: PlantUML Hitchhikers Guide: https://crashedmind.github.io/PlantUMLHitchhikersGuide/index.html
+
+----
+
+## Google Cloud Platform
+
+
+![Google Cloud Platform](https://g.gravizo.com/source/svg/rendered_code_for_google_cloud_platform_example?https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FMY_GRAPHIC_ASSETS%2Frefs%2Fheads%2FGithub_camo_bot_PlantUML%2FDesigning_Graphic_Syntax%2FGithub_camo_bot.md)
+
+
+<details>
+
+<summary>Rendered code for Google Cloud Platform example, by Github Camo crawler bot</summary>
+
+rendered_code_for_google_cloud_platform_example
+
+@startuml
+!define GCPPuml https://raw.githubusercontent.com/Crashedmind/PlantUML-icons-GCP/master/dist
+!include GCPPuml/GCPCommon.puml
+!include GCPPuml/Compute/Cloud_Functions.puml
+!include GCPPuml/Networking/Cloud_Firewall_Rules.puml
+!include GCPPuml/Compute/Compute_Engine.puml
+!include GCPPuml/Storage/Cloud_Storage.puml
+
+/'
+The other icons will need to come from other stdlib libraries: backup, users, clients.
+'/
+!include <awslib/AWSCommon>
+!include <awslib/AWSSimplified.puml>
+!include <awslib/Compute/all.puml>
+!include <awslib/mobile/all.puml>
+!include <awslib/general/all.puml>
+
+!include <material/common>
+!include <material/timer.puml>
+
+'skinparam linetype polyline
+ skinparam linetype ortho
+
+'top to bottom direction 
+package "Kid / Owner" {
+    Users(Users, "Friends", " ")
+    Client(Client, "Kid / Owner", " ")
+}
+
+package "MinecraftClients" {
+    Client(ClientMinecraft, "", " ")
+    Mobile(Mobile, "", " ")
+}
+
+package "Minecraft Project" {
+
+    together {
+    Cloud_Functions(Cloud_FunctionsStart, "Start Server", "Cloud Functions")
+    Cloud_Functions(Cloud_FunctionsStop, "Stop Server", "Cloud Functions")
+    Cloud_Functions(Cloud_FunctionAdd, "Add a Friend", "Cloud Functions")
+    }
+    Compute_Engine(Compute_Engine, "MineCraft Server", "Compute Engine")
+
+    Cloud_Storage(Cloud_Storage, "MineCraft Backups", "Cloud Storage")
+
+    together {
+    Cloud_Firewall_Rules(Cloud_Firewall_Rules_Starter,"Starter FW Entries", "Cloud Firewall Rules")
+    Cloud_Firewall_Rules(Cloud_Firewall_Rules_Friend,"Friend FW Entries", "Cloud Firewall Rules")
+    }
+    
+    'https://github.com/Crashedmind/PlantUML-icons-GCP/blob/master/source/GCPCommon.puml
+    'rectangle  "==Backup\n MA_TIMER(darkgreen)\n//<size:12>[Cron Task]</size>// " as Backup
+    
+    EntityColoring("Backup")
+    Entity("Backup", "Backup","Cron Task", "darkgrey", "ma_timer", "Backup")
+}
+
+Cloud_FunctionsStart -[hidden]d-> Cloud_FunctionsStop
+Cloud_FunctionsStop -[hidden]d-> Cloud_FunctionAdd
+
+Cloud_FunctionsStart -d-> Cloud_Firewall_Rules_Starter
+Cloud_FunctionAdd -d-> Cloud_Firewall_Rules_Friend
+Cloud_Firewall_Rules_Friend -[hidden]d-> Cloud_Firewall_Rules_Starter
+
+Cloud_FunctionsStart -> Compute_Engine
+Cloud_FunctionsStop -> Compute_Engine
+Compute_Engine -d-> Cloud_Storage
+
+Client -r-> Cloud_FunctionsStart
+Client -r-> Cloud_FunctionsStop
+Users -r-> Cloud_FunctionAdd
+
+ClientMinecraft -r-> Cloud_Firewall_Rules_Friend
+
+Backup -u-> Compute_Engine
+@enduml
+
+rendered_code_for_google_cloud_platform_example
+
+</details>
+
+
+
+
+
+```plantuml
+@startuml
+!define GCPPuml https://raw.githubusercontent.com/Crashedmind/PlantUML-icons-GCP/master/dist
+!include GCPPuml/GCPCommon.puml
+!include GCPPuml/Compute/Cloud_Functions.puml
+!include GCPPuml/Networking/Cloud_Firewall_Rules.puml
+!include GCPPuml/Compute/Compute_Engine.puml
+!include GCPPuml/Storage/Cloud_Storage.puml
+
+/'
+The other icons will need to come from other stdlib libraries: backup, users, clients.
+'/
+!include <awslib/AWSCommon>
+!include <awslib/AWSSimplified.puml>
+!include <awslib/Compute/all.puml>
+!include <awslib/mobile/all.puml>
+!include <awslib/general/all.puml>
+
+!include <material/common>
+!include <material/timer.puml>
+
+'skinparam linetype polyline
+ skinparam linetype ortho
+
+'top to bottom direction 
+package "Kid / Owner" {
+    Users(Users, "Friends", " ")
+    Client(Client, "Kid / Owner", " ")
+}
+
+package "MinecraftClients" {
+    Client(ClientMinecraft, "", " ")
+    Mobile(Mobile, "", " ")
+}
+
+package "Minecraft Project" {
+
+    together {
+    Cloud_Functions(Cloud_FunctionsStart, "Start Server", "Cloud Functions")
+    Cloud_Functions(Cloud_FunctionsStop, "Stop Server", "Cloud Functions")
+    Cloud_Functions(Cloud_FunctionAdd, "Add a Friend", "Cloud Functions")
+    }
+    Compute_Engine(Compute_Engine, "MineCraft Server", "Compute Engine")
+
+    Cloud_Storage(Cloud_Storage, "MineCraft Backups", "Cloud Storage")
+
+    together {
+    Cloud_Firewall_Rules(Cloud_Firewall_Rules_Starter,"Starter FW Entries", "Cloud Firewall Rules")
+    Cloud_Firewall_Rules(Cloud_Firewall_Rules_Friend,"Friend FW Entries", "Cloud Firewall Rules")
+    }
+    
+    'https://github.com/Crashedmind/PlantUML-icons-GCP/blob/master/source/GCPCommon.puml
+    'rectangle  "==Backup\n MA_TIMER(darkgreen)\n//<size:12>[Cron Task]</size>// " as Backup
+    
+    EntityColoring("Backup")
+    Entity("Backup", "Backup","Cron Task", "darkgrey", "ma_timer", "Backup")
+}
+
+Cloud_FunctionsStart -[hidden]d-> Cloud_FunctionsStop
+Cloud_FunctionsStop -[hidden]d-> Cloud_FunctionAdd
+
+Cloud_FunctionsStart -d-> Cloud_Firewall_Rules_Starter
+Cloud_FunctionAdd -d-> Cloud_Firewall_Rules_Friend
+Cloud_Firewall_Rules_Friend -[hidden]d-> Cloud_Firewall_Rules_Starter
+
+Cloud_FunctionsStart -> Compute_Engine
+Cloud_FunctionsStop -> Compute_Engine
+Compute_Engine -d-> Cloud_Storage
+
+
+
+Client -r-> Cloud_FunctionsStart
+Client -r-> Cloud_FunctionsStop
+Users -r-> Cloud_FunctionAdd
+
+
+ClientMinecraft -r-> Cloud_Firewall_Rules_Friend
+
+Backup -u-> Compute_Engine
+@enduml
+
+```
+
+
+---
 
 
 
