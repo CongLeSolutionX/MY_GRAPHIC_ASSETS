@@ -213,6 +213,55 @@ rendered_code_for_creole_and_html_example
 
 ----
 
+## PlantUML Features
+
+### Use Images in Diagrams[^3]
+
+[^3]: Use Images in Diagrams: https://crashedmind.github.io/PlantUMLHitchhikersGuide/PlantUMLSpriteLibraries/plantuml_sprites.html#use-images-in-diagrams
+
+
+#### Deployment Diagram Elements
+
+
+
+
+<details open>
+<summary>Click to show/hide the full native PlantUML implementation.</summary>
+
+```plantuml
+@startuml
+actor actor
+agent agent
+artifact artifact
+boundary boundary
+card card
+cloud cloud
+component component
+control control
+database database
+entity entity
+file file
+folder folder
+frame frame
+interface  interface
+node node
+package package
+queue queue
+stack stack
+rectangle rectangle
+storage storage
+usecase usecase
+@enduml
+```
+
+</details>
+
+
+
+---
+
+
+
 ## Google Cloud Platform
 
 
@@ -396,45 +445,6 @@ Backup -u-> Compute_Engine
 
 ---
 
-
-
-
-### Custom svg code block
-
-
-![My custom svg code block example](https://g.gravizo.com/source/svg/my_custom_svg_code_example?https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FMY_GRAPHIC_ASSETS%2Frefs%2Fheads%2FDesigning_graphic_syntax%2FDesigning_Graphic_Syntax%2FGithub_camo_bot.md)
-
-<details> 
-<summary>Rendered code for My custom svg code block example, by Github Camo crawler bot</summary>
-
-my_custom_svg_code_example
-
-{"svg": {
-		"@height": "450",
-		"@width": "450", 
-		"path": [
-			{"@id":"lineAB", "@d": "M 100 350 l 150 -300", "@stroke":"red"},
-			{"@id":"lineBC", "@d": "M 250 50 l 150 300", "@stroke":"red"},
-			{"@d":"M 100 350 q 150 -300 300 0", "@stroke":"blue", "@fill":"none"}
-    ],
-		"g": [
-			{"@stroke":"black", "circle":[  
-				{"@id":"pointA", "@cx":"100", "@cy":"350", "@r":"3"},
-				{"@id":"pointB", "@cx":"250", "@cy":"50", "@r":"3"},
-				{"@id":"pointC", "@cx":"400", "@cy":"350", "@r":"3"}
-			]},
-			{"text": [
-				{"@x":"100", "@y":"350", "@dx":"-30", "$":"A"},
-				{"@x":"250", "@y":"50", "@dy":"-10", "$":"B"},
-				{"@x":"400", "@y":"350", "@dx":"30", "$":"C"}
-			]}
-		]
-	}
-}
-
-my_custom_svg_code_example
-
-</details>
 
 
 ---
