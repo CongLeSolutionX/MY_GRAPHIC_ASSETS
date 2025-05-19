@@ -96,9 +96,43 @@ deactivate A;
 <!-- 
 https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FMY_GRAPHIC_ASSETS%2Frefs%2Fheads%2FDesigning_graphic_syntax%2FDesigning_Graphic_Syntax%2FGithub_camo_bot.md -->
 
+
+----
+
+### PlantUML diagram example
+
+
+![PlantUML diagram example](https://g.gravizo.com/source/svg/my_plant_uml_diagram_example?https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FMY_GRAPHIC_ASSETS%2Frefs%2Fheads%2FDesigning_graphic_syntax%2FDesigning_Graphic_Syntax%2FGithub_camo_bot.md)
+<details> 
+<summary>Rendered code for PlantUML diagram example, by Github Camo crawler bot</summary>
+
+my_plant_uml_diagram_example
+
+[*] --> State1;
+State1 --> [*];
+State1 : this is a string;
+State1 : this is another string;
+
+State1 -> State2;
+State2 --> [*];
+
+my_plant_uml_diagram_example
+
+</details>
+
+
+
+---
+
+
+
+### Custom svg code block
+
+
 ![My custom svg code block example](https://g.gravizo.com/source/my_custom_svg_code_example?https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FMY_GRAPHIC_ASSETS%2Frefs%2Fheads%2FDesigning_graphic_syntax%2FDesigning_Graphic_Syntax%2FGithub_camo_bot.md)
 <details> 
 <summary>Rendered code for My custom svg code block example, by Github Camo crawler bot</summary>
+
 my_custom_svg_code_example
 
 @gravizosvg
