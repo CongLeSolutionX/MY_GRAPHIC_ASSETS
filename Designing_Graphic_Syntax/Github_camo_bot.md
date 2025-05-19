@@ -186,6 +186,43 @@ Foo -> Foo6 : To collections
 Foo -> Foo7: To queue
 @enduml
 
+my_plant_uml_diagram_example
+
+</details>
+
+---
+
+
+----
+
+### PlantUML diagram example 2
+
+
+![PlantUML diagram example](https://g.gravizo.com/source/svg/my_second_plant_uml_diagram_example?https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FMY_GRAPHIC_ASSETS%2Frefs%2Fheads%2FDesigning_graphic_syntax%2FDesigning_Graphic_Syntax%2FGithub_camo_bot.md)
+
+<details>
+
+<summary>Rendered code for PlantUML diagram example, by Github Camo crawler bot</summary>
+
+my_second_plant_uml_diagram_example
+
+participant Participant as Foo
+actor       Actor       as Foo1
+boundary    Boundary    as Foo2
+control     Control     as Foo3
+entity      Entity      as Foo4
+database    Database    as Foo5
+collections Collections as Foo6
+queue       Queue       as Foo7
+Foo -> Foo1 : To actor 
+Foo -> Foo2 : To boundary
+Foo -> Foo3 : To control
+Foo -> Foo4 : To entity
+Foo -> Foo5 : To database
+Foo -> Foo6 : To collections
+Foo -> Foo7: To queue
+
+my_second_plant_uml_diagram_example
 
 </details>
 
