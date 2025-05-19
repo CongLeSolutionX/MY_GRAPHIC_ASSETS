@@ -87,7 +87,7 @@ digraph G {
 [^1]: PlantUML website: https://plantuml.com/sitemap
 
 
-## PlantUML diagram example
+## PlantUML diagram example - Syntax style 1
 
 
 ![PlantUML diagram example](https://g.gravizo.com/source/svg/my_plant_uml_diagram_example?https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FMY_GRAPHIC_ASSETS%2Frefs%2Fheads%2FDesigning_graphic_syntax%2FDesigning_Graphic_Syntax%2FGithub_camo_bot.md)
@@ -122,7 +122,7 @@ my_plant_uml_diagram_example
 
 ----
 
-## PlantUML diagram example 2
+## PlantUML diagram example - Syntax style 2
 
 
 ![PlantUML diagram example](https://g.gravizo.com/source/svg/my_second_plant_uml_diagram_example?https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FMY_GRAPHIC_ASSETS%2Frefs%2Fheads%2FDesigning_graphic_syntax%2FDesigning_Graphic_Syntax%2FGithub_camo_bot.md)
