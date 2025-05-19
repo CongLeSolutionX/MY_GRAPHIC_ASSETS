@@ -222,6 +222,41 @@ rendered_code_for_creole_and_html_example
 
 #### Deployment Diagram Elements
 
+![Deployment Diagram Elements](https://g.gravizo.com/source/svg/rendered_code_for_deployment_diagram_elements?https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FMY_GRAPHIC_ASSETS%2Frefs%2Fheads%2FGithub_camo_bot_PlantUML%2FDesigning_Graphic_Syntax%2FGithub_camo_bot.md)
+
+<details>
+
+<summary>Rendered code for Deployment Diagram Elements example, by Github Camo crawler bot</summary>
+
+rendered_code_for_deployment_diagram_elements
+
+@startuml
+actor actor
+agent agent
+artifact artifact
+boundary boundary
+card card
+cloud cloud
+component component
+control control
+database database
+entity entity
+file file
+folder folder
+frame frame
+interface  interface
+node node
+package package
+queue queue
+stack stack
+rectangle rectangle
+storage storage
+usecase usecase
+@enduml
+
+rendered_code_for_deployment_diagram_elements
+
+</details>
 
 
 
