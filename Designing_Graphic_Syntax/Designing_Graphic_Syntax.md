@@ -387,6 +387,10 @@ C["<a href='https://github.com/CongLeSolutionX/CongLeSolutionX' target='_blank'>
 
 id1>"<a href='https://github.com/CongLeSolutionX/CongLeSolutionX' target='_blank'>Hit me up at my homepage</a>"]
 
+
+id2((("<a href='https://github.com/CongLeSolutionX/CongLeSolutionX' target='_blank'>Hit me up at my homepage</a>")))
+
+
 Lightning_Bolt@{ shape: bolt, label: "Communication link" }
 
 
