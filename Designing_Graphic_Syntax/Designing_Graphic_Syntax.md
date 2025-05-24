@@ -383,6 +383,9 @@ flowchart LR
 
     Closing_quote@{ shape: braces, label: "With the right context,<br/>theory become reality" }
 
+C["<a href='https://github.com/CongLeSolutionX/CongLeSolutionX' target='_blank'>Hit me up at my homepage</a>"]
+
+
 Closing_quote ~~~ My_Meme
 
 ```
