@@ -391,6 +391,16 @@ id1>"<a href='https://github.com/CongLeSolutionX/CongLeSolutionX' target='_blank
 id2((("<a href='https://github.com/CongLeSolutionX/CongLeSolutionX' target='_blank'>Hit me up at my homepage</a>")))
 
 
+
+id3(("<a href='https://github.com/CongLeSolutionX/CongLeSolutionX' target='_blank'>Hit me up at my homepage</a>"))
+
+
+
+id4("<a href='https://github.com/CongLeSolutionX/CongLeSolutionX' target='_blank'>Hit me up at my homepage</a>")
+
+
+
+
 Lightning_Bolt@{ shape: bolt, label: "Communication link" }
 
 
