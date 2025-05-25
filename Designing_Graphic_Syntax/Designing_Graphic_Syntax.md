@@ -408,6 +408,11 @@ Closing_quote ~~~ My_Meme
 
 My_Meme --> C
 
+
+A e1@==> B
+  e1@{ animate: true }
+
+
 ```
 
 
@@ -449,6 +454,7 @@ flowchart LR
 
 Closing_quote ~~~ My_Meme
 My_Meme --> Link_to_my_profile
+
 
 ```
 
