@@ -535,6 +535,13 @@ Degree (°) — &#176;
 Pi (π) — &#960;
 
 
+
+
+>[!TIP]
+> Refer to Wikipedia’s page on [HTML entities](https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references) for full list of special symbols.
+
+
+
 ----
 
 
