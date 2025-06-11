@@ -504,6 +504,27 @@ The list will filter as you type, so once you find the emoji you're looking for,
 
 
 
+---
+
+## Special Symbols
+
+>[!TIP]
+> Reference source: https://www.markdownguide.org/hacks/#symbols
+
+
+Here’s a partial list of HTML entities for symbols:
+
+Copyright (©) — &copy;
+Registered trademark (®) — &reg;
+Trademark (™) — &trade;
+Euro (€) — &euro;
+Left arrow (←) — &larr;
+Up arrow (↑) — &uarr;
+Right arrow (→) — &rarr;
+Down arrow (↓) — &darr;
+Degree (°) — &#176;
+Pi (π) — &#960;
+
 
 ----
 
