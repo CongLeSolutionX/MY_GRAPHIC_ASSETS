@@ -541,6 +541,21 @@ Pi (π) — &#960;
 > Refer to Wikipedia’s page on [HTML entities](https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references) for full list of special symbols.
 
 
+---
+
+
+## Admonitions
+
+> [!TIP]
+> Reference source: https://www.markdownguide.org/hacks/#admonitions
+
+> :warning: **Warning:** Do not push the big red button.
+
+> :memo: **Note:** Sunrises are beautiful.
+
+> :bulb: **Tip:** Remember to appreciate the little things in life.
+>
+> 
 
 ----
 
