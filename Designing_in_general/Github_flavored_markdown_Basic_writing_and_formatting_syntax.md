@@ -504,11 +504,23 @@ The list will filter as you type, so once you find the emoji you're looking for,
 
 ----
 
-## Color
+## Underline
+
+> [!TIP]
+> Reference source: https://www.markdownguide.org/hacks/#underline
+
+Some of these words <ins>will be underlined</ins>.
+
+
+
+----
+
+
+## Color - not work properly
 > [!TIP]
 > Reference source: https://www.markdownguide.org/hacks/#color
 
-<font color="yellow">This text is red!</font>
+<font color="yellow">This text is yellow!</font>
 
 ---
 
