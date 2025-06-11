@@ -509,6 +509,10 @@ The list will filter as you type, so once you find the emoji you're looking for,
 > [!TIP]
 > Reference source: https://www.markdownguide.org/hacks/#underline
 
+```md
+Some of these words <ins>will be underlined</ins>.
+```
+
 Some of these words <ins>will be underlined</ins>.
 
 
