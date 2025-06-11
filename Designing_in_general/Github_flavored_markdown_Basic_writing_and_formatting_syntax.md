@@ -502,7 +502,13 @@ The list will filter as you type, so once you find the emoji you're looking for,
 > [!TIP]
 > For a full list of available emoji and codes, see [the Emoji-Cheat-Sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md).
 
+----
 
+## Color
+> [!TIP]
+> Reference source: https://www.markdownguide.org/hacks/#color
+
+<font color="yellow">This text is red!</font>
 
 ---
 
