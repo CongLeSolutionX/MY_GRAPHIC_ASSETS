@@ -567,6 +567,15 @@ Pi (π) — &#960;
 > [!TIP]
 > Reference source: https://www.markdownguide.org/hacks/#admonitions
 
+```md
+> :warning: **Warning:** Do not push the big red button.
+
+> :memo: **Note:** Sunrises are beautiful.
+
+> :bulb: **Tip:** Remember to appreciate the little things in life.
+
+```
+
 > :warning: **Warning:** Do not push the big red button.
 
 > :memo: **Note:** Sunrises are beautiful.
