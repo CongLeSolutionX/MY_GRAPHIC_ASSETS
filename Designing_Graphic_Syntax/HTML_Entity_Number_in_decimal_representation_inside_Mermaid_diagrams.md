@@ -223,6 +223,7 @@ flowchart TD
     F --> |No ❌| H["Find its Decimal or Hex code and use that in the various format below:<br/>e.g., '#8594;' is the same symbol as <char>#8594;</char>, and the final rendered symbol is →"]
 
     subgraph Output["Output"]
+    style Output fill:#F2F2,stroke:#333,stroke-width:1px, color: #FFFF
     direction LR
         C --> Z["End:<br/>Character displays correctly"]
         E --> Z
