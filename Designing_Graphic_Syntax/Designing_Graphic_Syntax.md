@@ -745,7 +745,7 @@ config:
 %%{
   init: {
     'flowchart': { 'htmlLabels': false },
-    'fontFamily': 'Fantasy',
+    'fontFamily': 'Luminari',
     'themeVariables': {
       'primaryColor': '#fc82',
       'primaryTextColor': '#F8B229',
