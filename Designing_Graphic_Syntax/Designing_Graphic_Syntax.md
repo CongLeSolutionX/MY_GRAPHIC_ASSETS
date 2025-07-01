@@ -627,6 +627,7 @@ copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
 config:
   layout: elk
   theme: base
+  look: handDrawn
 ---
 %%%%%%%% Mermaid version v11.4.1-b.14
 %%%%%%%% Available curve styles include the following keywords:
@@ -636,11 +637,11 @@ config:
     'flowchart': { 'htmlLabels': true, 'curve': 'basis' },
     'fontFamily': 'Monaco',
     'themeVariables': {
-      'primaryColor': '#D521E3',
+      'primaryColor': '#22BB',
       'primaryTextColor': '#F8B229',
       'lineColor': '#F8B229',
       'primaryBorderColor': '#27AE60',
-      'secondaryColor': '#2DF2',
+      'secondaryColor': '#6483',
       'secondaryTextColor': '#6C3483',
       'secondaryBorderColor': '#A569BD',
       'fontSize': '15px'
@@ -665,15 +666,15 @@ flowchart LR
     TextToSpeech -- Speaks Vietnamese --> User
 
     subgraph Voice_Input["Voice Input"]
-    style Voice_Input fill:#2c2f,stroke:#333,stroke-width:1px
-        direction LR
+    style Voice_Input fill:#c322,stroke:#333,stroke-width:1px, color:#FFFF
+    direction LR
         SpeechRecognizer
         RecordingController
     end
 
     subgraph Voice_Output["Voice Output"]
-    style Voice_Output fill:#c1d2,stroke:#333,stroke-width:1px
-        direction LR
+    style Voice_Output fill:#c1d2,stroke:#333,stroke-width:1px, color:#FFFF
+    direction LR
         TextToSpeech
         PlaybackController
     end
