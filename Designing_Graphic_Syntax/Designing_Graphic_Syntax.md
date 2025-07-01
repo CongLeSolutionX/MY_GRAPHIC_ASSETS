@@ -694,6 +694,7 @@ license(s): "MIT, CC BY 4.0"
 copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
 config:
   theme: base
+  look: handDrawn
 ---
 %%%%%%%% Mermaid version v11.4.1-b.14
 %%{
@@ -718,13 +719,16 @@ flowchart LR
 
     Link_to_my_profile{{"<a href='https://github.com/CongLeSolutionX/CongLeSolutionX' target='_blank'>Click here if you care about my profile</a>"}}
 
+
+My_Meme:::Style_To_Test
+
 Closing_quote ~~~ My_Meme
 My_Meme animatingEdge@--> Link_to_my_profile
 animatingEdge@{ animate: true }
 
 
-%% A == ==> B
-%% animatingEdge2@{ animate: true }
+classDef Style_To_Test fill:#F2F2,stroke:#333,stroke-width:2px, color: #27AE60
+
 
 ```
 
