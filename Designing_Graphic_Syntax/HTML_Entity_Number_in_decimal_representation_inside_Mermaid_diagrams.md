@@ -424,6 +424,6 @@ flowchart LR
 For a complete list of all available HTML character entities, you can consult these authoritative sources:
 
 *   **Mozilla Developer Network (MDN):** [HTML character references](https://developer.mozilla.org/en-US/docs/Glossary/Entity)
-*   **W3Schools:** [HTML Entity Reference](https://www.w3schools.com/charsets/ref_html_entities.asp)
+*   **W3Schools:** [HTML Entity Reference](https://www.w3schools.com/html/html_entities.asp)
 
 -----
