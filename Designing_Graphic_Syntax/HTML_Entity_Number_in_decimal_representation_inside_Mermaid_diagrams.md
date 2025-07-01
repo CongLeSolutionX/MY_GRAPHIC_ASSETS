@@ -351,6 +351,8 @@ mindmap
     Accented_Characters))"**Accented Characters**"((
         Symbol_1["`#225;`"] %% á
         Symbol_2["`#241;`"] %% ñ
+    Combining_Diacritical_Marks))"Combining Diacritical Marks"((
+        Character_1))"`Co#770;ng Le#770;`"((
 ```
 
 
