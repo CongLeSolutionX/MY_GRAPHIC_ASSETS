@@ -704,15 +704,15 @@ config:
       'primaryColor': '#fc82',
       'primaryTextColor': '#F8B229',
       'primaryBorderColor': '#27AE60',
-      'secondaryColor': '#81c784',
+      'secondaryColor': '#8784',
       'secondaryTextColor': '#6C3483',
       'lineColor': '#F8B229',
       'fontSize': '20px'
     }
   }
 }%%
-flowchart TD
-    My_Meme@{ img: "https://raw.githubusercontent.com/CongLeSolutionX/MY_GRAPHIC_ASSETS/refs/heads/main/MY_MEME/My-meme-ideas.png", label: "Ăn uống gì chưa ngừi đẹp?", pos: "b", w: 200, h: 150, constraint: "on" }
+flowchart LR
+    My_Meme@{ img: "https://raw.githubusercontent.com/CongLeSolutionX/MY_GRAPHIC_ASSETS/refs/heads/main/MY_MEME/My-meme-ideas.png", label: "C<char>o#770;</char>ngL<char>e#770;</char>SolutionX", pos: "b", w: 200, h: 150, constraint: "on" }
 
     Closing_quote@{ shape: braces, label: "With the right context,<br/>theory become reality" }
 
