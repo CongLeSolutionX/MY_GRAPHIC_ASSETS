@@ -352,7 +352,10 @@ mindmap
         Symbol_1["`#225;`"] %% á
         Symbol_2["`#241;`"] %% ñ
     Combining_Diacritical_Marks))"Combining Diacritical Marks"((
-        Character_1))"`Co#770;ng Le#770;`"((
+        Character_1{{"`Co#770;ng Le#770;`"}} %% Công Lê
+    Currency_Symbols))"Currency Symbols"((
+      Character_1{{"`#8383;`"}} %% ₿ %% Bitcoin Sign
+
 ```
 
 
