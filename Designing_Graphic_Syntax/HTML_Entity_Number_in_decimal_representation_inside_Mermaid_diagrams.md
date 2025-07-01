@@ -358,6 +358,8 @@ mindmap
     UTF_8_Miscellaneous_Symbols))"UTF-8 Miscellaneous Symbols"((
         Symbol_1["`#9728;`"] %% ☀ %% BLACK SUN WITH RAYS
         Symbol_2["`#9729;`"] %% ☁ %% CLOUD
+        Symbol_3["`#9764;`"] %% ☤ %% CADUCEUS
+        Symbol_4["`#9769;`"] %% ☩ %% CROSS OF JERUSALEM
 
 ```
 
