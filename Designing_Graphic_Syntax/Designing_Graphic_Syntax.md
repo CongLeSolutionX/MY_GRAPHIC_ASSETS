@@ -729,7 +729,6 @@ animatingEdge@{ animate: true }
 
 classDef Style_To_Test fill:#F2F2,stroke:#333,stroke-width:2px, color: #27AE60
 
-
 ```
 
 ---
