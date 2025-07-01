@@ -712,7 +712,7 @@ config:
   }
 }%%
 flowchart LR
-    My_Meme@{ img: "https://raw.githubusercontent.com/CongLeSolutionX/MY_GRAPHIC_ASSETS/refs/heads/main/MY_MEME/My-meme-ideas.png", label: "C<char>o#770;</char>ngL<char>e#770;</char>SolutionX", pos: "b", w: 200, h: 150, constraint: "on" }
+    My_Meme@{ img: "https://raw.githubusercontent.com/CongLeSolutionX/CongLeSolutionX/refs/heads/main/assets/images/My-meme-oranges-and-orange-slices.png", label: "C<char>o#770;</char>ngL<char>e#770;</char>SolutionX", pos: "b", w: 200, h: 150, constraint: "on" }
 
     Closing_quote@{ shape: braces, label: "With the right context,<br/>theory become reality" }
 
