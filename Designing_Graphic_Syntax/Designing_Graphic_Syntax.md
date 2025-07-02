@@ -9,10 +9,13 @@ copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
 
 # Designing graphic art in Mermaid syntax
 
+<details open>
+<summary>Click to show/hide the full disclaimer.</summary>
+   
 > <ins>📢 **Disclaimer** 🚨</ins>
 >
-> All the projects with my meme images (as my signature way to label repos based on their functionalities for future review) </br>
-> are born from my fascination with blending digital art and artificial intelligence.</br>
+> This is a sketch book where I actively experiment and try new techniques<br/>
+> and get result in realtime for faster development.</br>
 > It's where I document my academic explorations,</br>
 > share my findings with anyone interested,</br>
 > and maintain a personal vault of my creative and technical journey.</br>
@@ -28,8 +31,10 @@ copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
 > 1. **MIT License:** Applies to all code implementations (Swift, Mermaid, and other programming languages).
 > 2. **Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0):** Applies to all non-code content, including text, explanations, diagrams, and illustrations.
 
----
+</details>
 
+
+----
 
 
 
