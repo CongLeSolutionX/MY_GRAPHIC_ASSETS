@@ -7,8 +7,8 @@ copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
 ---
 
 
+## Designing_Math_Notations_Equations
 
-----
 
 > <ins>📢 **Disclaimer** 🚨</ins>
 >
@@ -29,8 +29,37 @@ copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
 > 1. **MIT License:** Applies to all code implementations (Swift, Mermaid, and other programming languages).
 > 2. **Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0):** Applies to all non-code content, including text, explanations, diagrams, and illustrations.
 
----
+----
 
+# Designing graphic art in Mermaid syntax
+
+
+<details open>
+<summary>Click to show/hide the full disclaimer.</summary>
+   
+> <ins>📢 **Disclaimer** 🚨</ins>
+>
+> This is a sketch book where I actively experiment and try new techniques<br/>
+> and get result in realtime for faster development.</br>
+> It's where I document my academic explorations,</br>
+> share my findings with anyone interested,</br>
+> and maintain a personal vault of my creative and technical journey.</br>
+> I'm not sure the link for this repo being shared in the back by others,</br>
+> since I havent plan for any analytics for this project yet.</br>
+> ...and I'm actively looking for a job...</br>
+
+> This document contains my personal notes on the topic,</br>
+> compiled from publicly available documentation and various cited sources.
+> 
+> The materials are intended for educational purposes (<ins>sometimes, entertainment purposes</ins>), personal study, and technical reference.
+> The content is dual-licensed:
+> 1. **MIT License:** Applies to all code implementations (Swift, Mermaid, and other programming languages).
+> 2. **Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0):** Applies to all non-code content, including text, explanations, diagrams, and illustrations.
+
+</details>
+
+
+----
 
 
 
@@ -47,9 +76,9 @@ flowchart LR
     A([Start])
 
     %% A node whose label is an <img> tag
-    B(["<img src='https://github.com/CongLeSolutionX/MY_GRAPHIC_ASSETS/blob/main/my_octocat.png?raw=true' width='80'/>"])
+    B(["<img src='https://github.com/CongLeSolutionX/MY_GRAPHIC_ASSETS/blob/main/my_octocat.png?raw=true' width='50'/>"])
 
-C(["<img src='https://raw.githubusercontent.com/CongLeSolutionX/MY_GRAPHIC_ASSETS/refs/heads/Designing_graphic_syntax/I_Asked_AI_Bots.jpg' width='80'/>"])
+C(["<img src='' width='50'/>"])
 
     %% Show normal edges
     A --> B
@@ -329,6 +358,203 @@ My_Meme ~~~ Closing_quote
 ---
 
 
+```mermaid
+---
+title: "CongLeSolutionX"
+author: "Cong Le"
+version: "1.0"
+license(s): "MIT, CC BY 4.0"
+copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
+config:
+  theme: base
+---
+%%%%%%%% Mermaid version v11.4.1-b.14
+%%{
+  init: {
+    'flowchart': { 'htmlLabels': false },
+    'fontFamily': 'Bradley Hand',
+    'themeVariables': {
+      'primaryColor': '#fc82',
+      'primaryTextColor': '#F8B229',
+      'primaryBorderColor': '#27AE60',
+      'secondaryColor': '#81c784',
+      'secondaryTextColor': '#6C3483',
+      'lineColor': '#F8B229',
+      'fontSize': '20px'
+    }
+  }
+}%%
+flowchart LR
+    My_Meme@{ img: "https://raw.githubusercontent.com/CongLeSolutionX/MY_GRAPHIC_ASSETS/refs/heads/main/MY_MEME/My-meme-ideas.png", label: "Ăn uống gì chưa ngừi đẹp?", pos: "b", w: 200, h: 150, constraint: "on" }
+
+    Closing_quote@{ shape: braces, label: "Design ideas come from from a friend" }
+
+Closing_quote ~~~ My_Meme
+
+```
+
+
+
+---
+
+
+```mermaid
+---
+title: "CongLeSolutionX"
+author: "Cong Le"
+version: "1.0"
+license(s): "MIT, CC BY 4.0"
+copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
+config:
+  theme: base
+---
+%%%%%%%% Mermaid version v11.4.1-b.14
+%%{
+  init: {
+    'flowchart': { 'htmlLabels': false },
+    'fontFamily': 'Bradley Hand',
+    'themeVariables': {
+      'primaryColor': '#fc82',
+      'primaryTextColor': '#F8B229',
+      'primaryBorderColor': '#27AE60',
+      'secondaryColor': '#81c784',
+      'secondaryTextColor': '#6C3483',
+      'lineColor': '#F8B229',
+      'fontSize': '20px'
+    }
+  }
+}%%
+flowchart LR
+    My_Meme@{ img: "https://raw.githubusercontent.com/CongLeSolutionX/MY_GRAPHIC_ASSETS/refs/heads/main/MY_MEME/My-meme-ideas.png", label: "Ăn uống gì chưa ngừi đẹp?", pos: "b", w: 200, h: 150, constraint: "on" }
+
+    Closing_quote@{ shape: braces, label: "With the right context,<br/>theory become reality" }
+
+C["<a href='https://github.com/CongLeSolutionX/CongLeSolutionX' target='_blank'>Hit me up at my homepage</a>"]
+
+id1>"<a href='https://github.com/CongLeSolutionX/CongLeSolutionX' target='_blank'>Hit me up at my homepage</a>"]
+
+
+id2((("<a href='https://github.com/CongLeSolutionX/CongLeSolutionX' target='_blank'>Hit me up at my homepage</a>")))
+
+
+
+id3(("<a href='https://github.com/CongLeSolutionX/CongLeSolutionX' target='_blank'>Hit me up at my homepage</a>"))
+
+
+
+id4("<a href='https://github.com/CongLeSolutionX/CongLeSolutionX' target='_blank'>Hit me up at my homepage</a>")
+
+
+
+
+Lightning_Bolt@{ shape: bolt, label: "Communication link" }
+
+
+Closing_quote ~~~ My_Meme
+
+My_Meme --> C
+
+
+A e1@==> B
+  e1@{ animate: true }
+
+
+```
+
+
+---
+
+
+```mermaid
+---
+title: "CongLeSolutionX"
+author: "Cong Le"
+version: "1.0"
+license(s): "MIT, CC BY 4.0"
+copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
+config:
+  theme: base
+---
+%%%%%%%% Mermaid version v11.4.1-b.14
+%%{
+  init: {
+    'flowchart': { 'htmlLabels': false },
+    'fontFamily': 'Bradley Hand',
+    'themeVariables': {
+      'primaryColor': '#fc82',
+      'primaryTextColor': '#F8B229',
+      'primaryBorderColor': '#27AE60',
+      'secondaryColor': '#81c784',
+      'secondaryTextColor': '#6C3483',
+      'lineColor': '#F8B229',
+      'fontSize': '20px'
+    }
+  }
+}%%
+flowchart LR
+    My_Meme@{ img: "https://raw.githubusercontent.com/CongLeSolutionX/MY_GRAPHIC_ASSETS/refs/heads/main/MY_MEME/My-meme-ideas.png", label: "Ăn uống gì chưa ngừi đẹp?", pos: "b", w: 200, h: 150, constraint: "on" }
+
+    Closing_quote@{ shape: braces, label: "With the right context,<br/>theory become reality" }
+
+    Link_to_my_profile{{"<a href='https://github.com/CongLeSolutionX/CongLeSolutionX' target='_blank'>Click here if you care about my profile</a>"}}
+
+Closing_quote ~~~ My_Meme
+My_Meme animatingEdge@--> Link_to_my_profile
+animatingEdge@{ animate: true }
+
+
+```
+
+
+---
+
+
+
+```mermaid
+---
+title: "CongLeSolutionX"
+author: "Cong Le"
+version: "1.0"
+license(s): "MIT, CC BY 4.0"
+copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
+config:
+  theme: base
+---
+%%%%%%%% Mermaid version v11.4.1-b.14
+%%{
+  init: {
+    'flowchart': { 'htmlLabels': true },
+    'fontFamily': 'Brush Script MT',
+    'themeVariables': {
+      'primaryColor': '#fc82',
+      'primaryTextColor': '#F8B229',
+      'primaryBorderColor': '#27AE60',
+      'secondaryColor': '#81c784',
+      'secondaryTextColor': '#6C3483',
+      'lineColor': '#F8B229',
+      'fontSize': '20px'
+    }
+  }
+}%%
+flowchart LR
+    My_Meme@{ img: "https://raw.githubusercontent.com/CongLeSolutionX/MY_GRAPHIC_ASSETS/refs/heads/Designing_graphic_syntax/MY_MEME/My-meme-icon-design.png", label: "Ăn uống gì chưa ngừi đẹp?", pos: "b", w: 200, h: 150, constraint: "on" }
+
+    Closing_quote@{ shape: braces, label: "I'll leave this Earth empty-handed anyway!<br/>YOLO :metal:" }
+
+My_Meme ~~~ Closing_quote
+
+:love_you_gesture:
+
+
+```
+
+<br/> :metal: <br/> YOLO <br/> :love_you_gesture:
+
+
+
+---
+
+
 
 ```mermaid
 ---
@@ -431,7 +657,164 @@ Comic Sans MS (cursive)
 
 
 
+
+
+~~~mermaid
 ---
+title: "High-Level System Overview"
+author: "Cong Le"
+version: "1.0"
+license(s): "MIT, CC BY 4.0"
+copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
+config:
+  layout: elk
+  theme: base
+  look: handDrawn
+---
+%%%%%%%% Mermaid version v11.4.1-b.14
+%%%%%%%% Available curve styles include the following keywords:
+%% basis, bumpX, bumpY, cardinal, catmullRom, linear, monotoneX, monotoneY, natural, step, stepAfter, stepBefore.
+%%{
+  init: {
+    'flowchart': { 'htmlLabels': true, 'curve': 'basis' },
+    'fontFamily': 'Monaco',
+    'themeVariables': {
+      'primaryColor': '#22BB',
+      'primaryTextColor': '#F8B229',
+      'lineColor': '#F8B229',
+      'primaryBorderColor': '#27AE60',
+      'secondaryColor': '#6483',
+      'secondaryTextColor': '#6C3483',
+      'secondaryBorderColor': '#A569BD',
+      'fontSize': '15px'
+    }
+  }
+}%%
+flowchart LR
+    User@{ img: "https://github.com/CongLeSolutionX/MY_GRAPHIC_ASSETS/blob/Designing_graphic_syntax/MY_MEME_ICONS/Orange-Cloud-Search-Icon-Base-Color-Black-1024x1024.png?raw=true", label: "User", pos: "b", w: 100, h: 100, constraint: "on" }
+
+    User -- Speaks Vietnamese --> SpeechRecognizer
+    SpeechRecognizer -- Transcribes --> AICardView(("AICardView"))
+    AICardView -- Contains --> UserInterface
+    AICardView -- Handles Input --> RecordingController
+    AICardView -- Handles Output --> PlaybackController
+    AICardView -- Triggers --> AIInteraction
+    AIInteraction -- Calls --> LLMModel(LLM Framework)
+    LLMModel -- Processes Question --> AIResponse
+    AIResponse -- Returns to --> AIInteraction
+    AIInteraction -- Updates --> AICardView
+    AICardView -- Displays --> AIResponse
+    AICardView -- Sends to --> TextToSpeech
+    TextToSpeech -- Speaks Vietnamese --> User
+
+    subgraph Voice_Input["Voice Input"]
+    style Voice_Input fill:#c322,stroke:#333,stroke-width:1px, color:#FFFF
+    direction LR
+        SpeechRecognizer
+        RecordingController
+    end
+
+    subgraph Voice_Output["Voice Output"]
+    style Voice_Output fill:#c1d2,stroke:#333,stroke-width:1px, color:#FFFF
+    direction LR
+        TextToSpeech
+        PlaybackController
+    end
+
+    style LLMModel fill:#212,stroke:#333,stroke-width:2px
+    style AICardView fill:#c229,stroke:#333,stroke-width:2px
+
+~~~
+
+
+----
+
+
+
+```mermaid
+---
+title: "CongLeSolutionX"
+author: "Cong Le"
+version: "1.0"
+license(s): "MIT, CC BY 4.0"
+copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
+config:
+  theme: base
+  look: handDrawn
+---
+%%%%%%%% Mermaid version v11.4.1-b.14
+%%{
+  init: {
+    'flowchart': { 'htmlLabels': false },
+    'fontFamily': 'Bradley Hand',
+    'themeVariables': {
+      'primaryColor': '#fc82',
+      'primaryTextColor': '#F8B229',
+      'primaryBorderColor': '#27AE60',
+      'secondaryColor': '#8784',
+      'secondaryTextColor': '#6C3483',
+      'lineColor': '#F8B229',
+      'fontSize': '20px'
+    }
+  }
+}%%
+flowchart LR
+    My_Meme@{ img: "https://raw.githubusercontent.com/CongLeSolutionX/CongLeSolutionX/refs/heads/main/assets/images/My-meme-oranges-and-orange-slices.png", label: "C<char>o#770;</char>ngL<char>e#770;</char>SolutionX", pos: "b", w: 200, h: 150, constraint: "on" }
+
+    Closing_quote@{ shape: braces, label: "With the right context,<br/>theory become reality" }
+
+    Link_to_my_profile{{"<a href='https://github.com/CongLeSolutionX/CongLeSolutionX' target='_blank'>Click here if you care about my profile</a>"}}
+
+
+My_Meme:::Style_To_Test
+
+Closing_quote ~~~ My_Meme
+My_Meme animatingEdge@--> Link_to_my_profile
+animatingEdge@{ animate: true }
+
+
+classDef Style_To_Test fill:#F2F2,stroke:#333,stroke-width:2px, color: #27AE60
+
+```
+
+---
+
+
+```mermaid
+---
+title: ""
+author: "Cong Le"
+version: "1.0"
+license(s): "MIT, CC BY 4.0"
+copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
+config:
+  theme: base
+---
+%%%%%%%% Mermaid version v11.4.1-b.14
+%%{
+  init: {
+    'flowchart': { 'htmlLabels': false },
+    'fontFamily': 'Luminari',
+    'themeVariables': {
+      'primaryColor': '#fc82',
+      'primaryTextColor': '#F8B229',
+      'primaryBorderColor': '#27AE60',
+      'secondaryColor': '#81c784',
+      'secondaryTextColor': '#6C3483',
+      'lineColor': '#F8B229',
+      'fontSize': '20px'
+    }
+  }
+}%%
+flowchart TD
+
+CongLeSolutionX["C<char>o#770;</char>ngL<char>e#770;</char>SolutionX"]
+
+```
+
+
+---
+
 
 
 ## Key limitations (current GitHub renderer)
@@ -443,14 +826,11 @@ Comic Sans MS (cursive)
 3. Only HTTPS or `data:` images render—no `file:` or `blob:` links.  
 4. All CSS you inject is scoped to the `<svg class="mermaid">…</svg>` element of that diagram, so it cannot leak into the rest of the README.
 
-
-
-
-
 ---
-**Licenses:**
-
-- **MIT License:**  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) - Full text in [LICENSE](LICENSE) file.
-- **Creative Commons Attribution 4.0 International:** [![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/88x31.png)](LICENSE-CC-BY) - Legal details in [LICENSE-CC-BY](LICENSE-CC-BY) and at [Creative Commons official site](http://creativecommons.org/licenses/by/4.0/).
-
+>
+>**Licenses:**
+>
+>- **MIT License:**  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) - Full text in [LICENSE](LICENSE) file.
+>- **Creative Commons Attribution 4.0 International:** [![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/88x31.png)](LICENSE-CC-BY) - Legal details in [LICENSE-CC-BY](LICENSE-CC-BY) and at [Creative Commons official site](http://creativecommons.org/licenses/by/4.0/).
+>
 ---
