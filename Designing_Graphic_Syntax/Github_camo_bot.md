@@ -31,13 +31,6 @@ copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
 
 ---
 
-<!-- 
-https%3A%2F%2Fraw.githubusercontent.com%2FCongLeSolutionX%2FMY_GRAPHIC_ASSETS%2Frefs%2Fheads%2FDesigning_graphic_syntax%2FDesigning_Graphic_Syntax%2FGithub_camo_bot.md -->
-
-
----
-
-# DOT syntax
 
 ## DOT syntax example
 
