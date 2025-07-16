@@ -51,6 +51,23 @@ source:
 
 ---
 
+
+
+### References
+
+*   **MDN Web Docs:**
+    *   [`@keyframes`](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes)
+    *   [`animation`](https://developer.mozilla.org/en-US/docs/Web/CSS/animation)
+    *   [`animation-timing-function`](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function)
+    *   [`transform`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform)
+*   **W3C Specifications:**
+    *   [CSS Animations Module Level 1](https://www.w3.org/TR/css-animations-1/)
+    *   [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/SVG2/)
+
+
+---
+
+
 <!-- 
 ```mermaid
 %% Current Mermaid version
