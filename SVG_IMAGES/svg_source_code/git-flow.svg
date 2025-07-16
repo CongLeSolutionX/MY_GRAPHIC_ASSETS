@@ -1,0 +1,75 @@
+<svg width="450" height="150" xmlns="http://www.w3.org/2000/svg" font-family="monospace" font-size="12px">
+  
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .fade-in > * {
+      opacity: 0;
+      animation-name: fadeIn;
+      animation-duration: 0.5s;
+      animation-fill-mode: forwards;
+      animation-iteration-count: 1;
+    }
+
+    #main-branch-line, 
+    #main-branch-label, 
+    #commit-1 {
+      animation-delay: 0s;
+    }
+
+    #feature-branch-start,
+    #feature-branch-line,
+    #feature-branch-label {
+      animation-delay: 0.5s;
+    }
+
+    #commit-2 {
+      animation-delay: 1.5s;
+    }
+
+    #commit-3 {
+      animation-delay: 2.5s;
+    }
+
+    #pr-icon,
+    #merge-path {
+      animation-delay: 3.5s;
+    }
+    
+    #commit-4 {
+      animation-delay: 4.5s;
+    }
+  </style>
+
+  <g class="fade-in">
+    <!-- Main Branch Line and Label -->
+    <line id="main-branch-line" x1="20" y1="100" x2="430" y2="100" stroke="#2B80F6" stroke-width="2"/>
+    <text id="main-branch-label" x="20" y="120" fill="#2B80F6">main</text>
+
+    <!-- Initial Commit on Main -->
+    <circle id="commit-1" cx="50" cy="100" r="5" fill="#2B80F6" stroke="#ffffff" stroke-width="2"/>
+
+    <!-- Feature Branch & its creation path -->
+    <path id="feature-branch-start" d="M 50 100 Q 80 100, 80 70" stroke="#7B47C0" stroke-width="2" fill="none"/>
+    <line id="feature-branch-line" x1="80" y1="70" x2="350" y2="70" stroke="#7B47C0" stroke-width="2"/>
+    <text id="feature-branch-label" x="80" y="50" fill="#7B47C0">feature/add-login</text>
+    
+    <!-- Commits on Feature Branch -->
+    <circle id="commit-2" cx="150" cy="70" r="5" fill="#7B47C0" stroke="#ffffff" stroke-width="2"/>
+    <circle id="commit-3" cx="250" cy="70" r="5" fill="#7B47C0" stroke="#ffffff" stroke-width="2"/>
+
+    <!-- Pull Request & Merge Path -->
+    <g id="pr-icon" transform="translate(320, 80)">
+      <path d="M 6 5 A 1 1, 0, 0, 0, 7 4 L 7 1 A 1 1, 0, 0, 0, 6 0 L 2 0 A 1 1, 0, 0, 0, 1 1 L 1 4 A 1 1, 0, 0, 0, 2 5 L 3 5 L 3 8 A 1 1, 0, 0, 0, 4 9 L 6 9 A 1 1, 0, 0, 0, 7 8 L 7 6 L 6 6" stroke="#3DA35B" stroke-width="1.5" fill="none"/>
+      <circle cx="2" cy="7.5" r="1.5" fill="#3DA35B" stroke="white" stroke-width="0.5"/>
+      <circle cx="5" cy="2.5" r="1.5" fill="#3DA35B" stroke="white" stroke-width="0.5"/>
+    </g>
+    <path id="merge-path" d="M 250 70 Q 300 70, 400 100" stroke="#7B47C0" stroke-dasharray="3 3" stroke-width="2" fill="none"/>
+    
+    <!-- Final Merge Commit -->
+    <circle id="commit-4" cx="400" cy="100" r="5" fill="#2B80F6" stroke="#ffffff" stroke-width="2"/>
+  </g>
+</svg>
