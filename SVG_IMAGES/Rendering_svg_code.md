@@ -176,7 +176,7 @@ config:
 %%{
   init: {
     'flowchart': { 'htmlLabels': false },
-    'fontFamily': 'Bradley Hand',
+    'fontFamily': 'Verdana',
     'themeVariables': {
       'primaryColor': '#fc82',
       'primaryTextColor': '#F8B229',
@@ -191,11 +191,11 @@ config:
 flowchart LR
   My_Meme@{ img: "https://raw.githubusercontent.com/CongLeSolutionX/CongLeSolutionX/refs/heads/main/assets/images/My-meme-light-bulb-question-marks.png", label: "Ăn uống gì chưa ngừi đẹp?", pos: "b", w: 200, h: 150, constraint: "off" }
 
-  Closing_quote@{ shape: braces, label: "...searching insights in the process of formulating better questions..." }
+  Closing_quote@{ shape: braces, label: "Just do it, differently" }
     
-  My_Meme ~~~ Closing_quote
+  Closing_quote ~~~ My_Meme
     
-  Link_to_my_profile{{"<a href='https://github.com/CongLeSolutionX/CongLeSolutionX' target='_blank'>Click here if you care about the profile of a tech guy seeking for job 🙏🏼</a>"}}
+  Link_to_my_profile{{"<a href='https://github.com/CongLeSolutionX/CongLeSolutionX' target='_blank'>Click here if you care about the profile of a tech guy seeking for a job 🙏🏼</a>"}}
 
   Closing_quote ~~~ My_Meme
   My_Meme animatingEdge@--> Link_to_my_profile
