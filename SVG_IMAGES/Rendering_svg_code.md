@@ -97,6 +97,9 @@ These animations help explain processes and data flows more effectively than sta
 
 *   **Animated Data Flow Path** ➡️: A diagram where lines or arrows light up sequentially to illustrate the path of a request or data.
 *   **Build/CI-CD Pipeline Status** 🚦: A sequence of nodes representing build steps that change color (e.g., from grey to yellow to green/red).
+
+![ci-cd-pipeline animation](./svg_source_code/ci-cd-pipeline.svg)
+
 *   **Simple State Machine Transition** 🔄: A marker that moves between labeled states in a state diagram to show a change in status.
 
 ![A simple state machine transition animation](./svg_source_code/state-machine.svg)
