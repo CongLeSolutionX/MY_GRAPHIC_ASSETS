@@ -1,3 +1,11 @@
+<!-- 
+title: bouncing-ball.svg
+author: Cong Le
+version: 1.0
+license(s): MIT, CC BY-SA 4.0
+copyright: Copyright © 2025 Cong Le. All Rights Reserved.
+-->
+
 <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
   <!-- CSS animation logic is embedded directly within the SVG -->
   <style>
