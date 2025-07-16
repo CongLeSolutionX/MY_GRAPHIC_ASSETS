@@ -96,6 +96,11 @@ These icons add a subtle touch of motion to draw the user's eye to important inf
 These animations help explain processes and data flows more effectively than static images.
 
 *   **Animated Data Flow Path** ➡️: A diagram where lines or arrows light up sequentially to illustrate the path of a request or data.
+
+![animated data flow](./svg_source_code/animated-data-flow.svg)
+
+
+
 *   **Build/CI-CD Pipeline Status** 🚦: A sequence of nodes representing build steps that change color (e.g., from grey to yellow to green/red).
 
 ![ci-cd-pipeline animation](./svg_source_code/ci-cd-pipeline.svg)
