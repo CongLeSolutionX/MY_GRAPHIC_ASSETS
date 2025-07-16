@@ -133,6 +133,8 @@ These add a polished, branded touch to a `README.md` file.
 *   **Gradient Background Shift** 🌈: A shape or background with a gradient that slowly and smoothly changes its colors over time.
 *   **Text "Handwriting" Effect** ✍️: Text that appears to be drawn on screen by animating the `stroke-dasharray` and `stroke-dashoffset` properties.
 
+![Handwriting Effect text](./svg_source_code/handwriting.svg)
+
 ---
 
 
