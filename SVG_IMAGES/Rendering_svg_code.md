@@ -105,11 +105,11 @@ These animations help explain processes and data flows more effectively than sta
 
 ![client-server animation](./svg_source_code/client-server-animation.svg)
 
-
-*   **GitHub `git` Flow Visualization** 🌿: A simplified diagram showing commits appearing sequentially on a `main` or `feature` branch.
-
 > [!NOTE]
 > Fixing the positions for each element in the diagram
+
+
+*   **GitHub `git` Flow Visualization** 🌿: A simplified diagram showing commits appearing sequentially on a `main` or `feature` branch.
 
 ![Animated Git Flow Diagram](./svg_source_code/git-flow.svg)
 
