@@ -1,0 +1,76 @@
+<!-- 
+title: state-machine.svg
+author: Cong Le
+version: 1.0
+license(s): MIT, CC BY-SA 4.0
+copyright: Copyright © 2025 Cong Le. All Rights Reserved.
+-->
+
+<svg width="650" height="200" viewBox="0 0 650 200" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    /* Base styles for the animated token */
+    #token {
+      /* The animation will last 6 seconds, use an ease-in-out curve for smooth acceleration, and loop forever. */
+      animation: move-token 6s infinite ease-in-out;
+    }
+    
+    /* Applying the highlight animation to each state's circle. We use animation-delay to sync highlights with the token's position. */
+    #pending-circle { animation: highlight-state 6s infinite; }
+    #processing-circle { animation: highlight-state 6s infinite; animation-delay: -4s; /* Starts animation 4s in */ }
+    #success-circle { animation: highlight-state 6s infinite; animation-delay: -2s; /* Starts animation 2s in */ }
+    
+    /* --- KEYFRAME DEFINITIONS --- */
+
+    /* Animation for the moving token, which moves from state to state. */
+    @keyframes move-token {
+      /* 0-15%: Stay at Pending */
+      0%, 15% { transform: translateX(0px); }
+      /* 35-50%: Move to and stay at Processing (225px from start) */
+      35%, 50% { transform: translateX(225px); }
+      /* 70-100%: Move to and stay at Success (450px from start) */
+      70%, 100% { transform: translateX(450px); }
+    }
+
+    /* Animation for highlighting the border of the current state. */
+    @keyframes highlight-state {
+      /* The highlight is active for the first quarter of its 6s cycle. */
+      0%, 25% { 
+        stroke: #2c7be5; /* Blue highlight color */
+        stroke-width: 4px; 
+      }
+      26%, 100% { 
+        stroke: #999;
+        stroke-width: 2px;
+      }
+    }
+  </style>
+
+  <!-- STATIC ELEMENTS: These do not move, they form the background. -->
+
+  <!-- STATES & LABELS -->
+  <g id="states">
+    <g id="pending-state">
+      <circle id="pending-circle" cx="100" cy="100" r="40" fill="#f0f0f0"/>
+      <text x="100" y="105" font-family="Helvetica, sans-serif" font-size="16" text-anchor="middle" fill="#333">Pending</text>
+    </g>
+    <g id="processing-state">
+      <circle id="processing-circle" cx="325" cy="100" r="40" fill="#f0f0f0"/>
+      <text x="325" y="105" font-family="Helvetica, sans-serif" font-size="16" text-anchor="middle" fill="#333">Processing</text>
+    </g>
+    <g id="success-state">
+      <circle id="success-circle" cx="550" cy="100" r="40" fill="#f0f0f0"/>
+      <text x="550" y="105" font-family="Helvetica, sans-serif" font-size="16" text-anchor="middle" fill="#333">Success</text>
+    </g>
+  </g>
+
+  <!-- TRANSITION PATHS -->
+  <g id="paths" stroke="#999" stroke-width="2">
+    <line x1="140" y1="100" x2="285" y2="100" />
+    <line x1="365" y1="100" x2="510" y2="100" />
+  </g>
+
+  <!-- ANIMATED ELEMENT: This circle moves on top of the static background. -->
+  <g id="animated-token">
+    <circle id="token" cx="100" cy="100" r="10" fill="#2c7be5" stroke="white" stroke-width="2"/>
+  </g>
+</svg>
