@@ -5,77 +5,69 @@ version: 1.0
 license(s): MIT, CC BY-SA 4.0
 copyright: Copyright © 2025 Cong Le. All Rights Reserved.
 -->
-
 <svg width="400" height="100" viewBox="0 0 400 100" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="bold">
   <style>
-    /* Default styling for all elements. This ensures they start in the idle state. */
-    #pipeline-diagram circle, #pipeline-diagram path {
-      fill: #cccccc; /* Idle color */
-      stroke: #cccccc; /* Idle color for paths */
-      transition: fill 0.3s ease, stroke 0.3s ease; /* For smooth transitions if animation is paused */
+    /* 1. Define the generic color change for circles (using 'fill') */
+    @keyframes progress-color {
+      /* Define the journey for a single element */
+      0%, 15% { fill: #cccccc; }   /* Start and stay Idle */
+      25%, 45% { fill: #f3d94f; }   /* Become Active */
+      55%, 100% { fill: #28a745; }  /* Become Success and stay */
     }
 
-    /* Keyframes define the animation sequence from 0% (start) to 100% (end). */
-    @keyframes run-pipeline {
-      /* Initial state: all idle. Holds for 10% of the animation time. */
-      0%, 10% {
-        #stage-build { fill: #cccccc; }
-        #arrow1 { stroke: #cccccc; }
-        #stage-test { fill: #cccccc; }
-        #arrow2 { stroke: #cccccc; }
-        #stage-deploy { fill: #cccccc; }
-      }
-      
-      /* Stage 1: "Build" becomes active. */
-      15%, 35% {
-        #stage-build { fill: #f3d94f; } /* Active Yellow */
-        #arrow1 { stroke: #f3d94f; }
-      }
-      
-      /* Stage 2: "Build" is successful, "Test" becomes active. */
-      40%, 60% {
-        #stage-build { fill: #28a745; } /* Success Green */
-        #arrow1 { stroke: #28a745; }
-        #stage-test { fill: #f3d94f; }
-        #arrow2 { stroke: #f3d94f; }
-      }
-      
-      /* Stage 3: "Test" is successful, "Deploy" becomes active. */
-      65%, 85% {
-        #stage-test { fill: #28a745; }
-        #arrow2 { stroke: #28a745; }
-        #stage-deploy { fill: #f3d94f; }
-      }
-      
-      /* Final state: All successful. Holds this state until the animation loops. */
-      90%, 100% {
-        #stage-deploy { fill: #28a745; }
-      }
+    /* 2. Define the generic color change for arrows (using 'stroke') */
+    @keyframes progress-stroke {
+      0%, 15% { stroke: #cccccc; }
+      25%, 45% { stroke: #f3d94f; }
+      55%, 100% { stroke: #28a745; }
     }
 
-    /* Apply the animation to the entire diagram group. */
-    #pipeline-diagram {
-      animation: run-pipeline 8s infinite;
+    /* 3. Apply these animations to each element with a delay */
+    /* Total animation cycle is 7.5s */
+    #stage-build {
+      animation: progress-color 7.5s infinite;
+      animation-delay: 0s;
+    }
+    #arrow1 {
+      animation: progress-stroke 7.5s infinite;
+      animation-delay: 0s;
+    }
+    #stage-test {
+      animation: progress-color 7.5s infinite;
+      animation-delay: 2.5s; /* Start after the first stage is well underway */
+    }
+    #arrow2 {
+      animation: progress-stroke 7.5s infinite;
+      animation-delay: 2.5s;
+    }
+    #stage-deploy {
+      animation: progress-color 7.5s infinite;
+      animation-delay: 5s; /* Start after the second stage is well underway */
+    }
+    
+    /* Default styling for text, ensuring it's always readable */
+    text {
+        fill: white;
     }
   </style>
 
-    <g id="pipeline-diagram">
-        <!-- Stage 1: Build -->
-        <circle id="stage-build" cx="50" cy="50" r="25" />
-        <text x="50" y="55" text-anchor="middle" fill="white">Build</text>
+  <g id="pipeline-diagram">
+    <!-- Stage 1: Build -->
+    <circle id="stage-build" cx="50" cy="50" r="25" />
+    <text x="50" y="55" text-anchor="middle">Build</text>
 
-        <!-- Arrow between Build and Test -->
-        <path id="arrow1" d="M80 50 L145 50" stroke-width="4" stroke-linecap="round"/>
+    <!-- Arrow between Build and Test -->
+    <path id="arrow1" d="M80 50 L145 50" stroke-width="4" stroke-linecap="round" fill="none"/>
 
-        <!-- Stage 2: Test -->
-        <circle id="stage-test" cx="200" cy="50" r="25" />
-        <text x="200" y="55" text-anchor="middle" fill="white">Test</text>
+    <!-- Stage 2: Test -->
+    <circle id="stage-test" cx="200" cy="50" r="25" />
+    <text x="200" y="55" text-anchor="middle">Test</text>
 
-        <!-- Arrow between Test and Deploy -->
-        <path id="arrow2" d="M230 50 L295 50" stroke-width="4" stroke-linecap="round"/>
+    <!-- Arrow between Test and Deploy -->
+    <path id="arrow2" d="M230 50 L295 50" stroke-width="4" stroke-linecap="round" fill="none"/>
 
-        <!-- Stage 3: Deploy -->
-        <circle id="stage-deploy" cx="350" cy="50" r="25" />
-        <text x="350" y="55" text-anchor="middle" fill="white">Deploy</text>
-    </g>
+    <!-- Stage 3: Deploy -->
+    <circle id="stage-deploy" cx="350" cy="50" r="25" />
+    <text x="350" y="55" text-anchor="middle">Deploy</text>
+  </g>
 </svg>
