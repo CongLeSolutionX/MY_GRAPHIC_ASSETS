@@ -99,8 +99,14 @@ These animations help explain processes and data flows more effectively than sta
 *   **Build/CI-CD Pipeline Status** 🚦: A sequence of nodes representing build steps that change color (e.g., from grey to yellow to green/red).
 *   **Simple State Machine Transition** 🔄: A marker that moves between labeled states in a state diagram to show a change in status.
 *   **Client-Server Request/Response** ↔️: An arrow that animates from a "Client" node to a "Server" node and then returns.
+
+![client-server animation](./svg_source_code/client-server-animation.svg)
+
+
 *   **GitHub `git` Flow Visualization** 🌿: A simplified diagram showing commits appearing sequentially on a `main` or `feature` branch.
 
+> [!NOTE]
+> Fixing the positions for each element in the diagram
 
 ![Animated Git Flow Diagram](./svg_source_code/git-flow.svg)
 
