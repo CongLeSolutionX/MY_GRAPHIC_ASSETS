@@ -24,7 +24,7 @@ source:
 
 
 
-# CHANGE_ME
+# Rendering SVG code
 <details open>
 <summary>Click to show/hide the full disclaimer.</summary>
    
@@ -41,9 +41,13 @@ source:
 
 ---
 
+![A bouncing ball](./svg_source_code/bouncing-ball.svg)
 
-## MAIN CONTENT - A Diagrammatic Guide 
 
+![A pulsating heart](./svg_source_code/pulsating-heart.svg)
+
+
+![A pulsating star](./svg_source_code/pulsating-star.svg)
 
 ---
 
