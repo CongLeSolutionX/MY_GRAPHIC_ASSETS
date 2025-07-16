@@ -54,6 +54,13 @@ These are common UI elements used to provide feedback on an ongoing process.
 *   **Rotating Gear or Cog** 🛠️: One or more gears spinning, perfect for representing "settings," "configuration," or a "build process."
 *   **Filling Progress Bar** 🟩: A simple rectangle that animates its width or a gradient to show completion from 0% to 100%.
 *   **Bouncing Ball Loader** 🏀: One or more circles bouncing in place, offering a more playful loading state.
+
+
+
+![A bouncing ball](./svg_source_code/bouncing-ball.svg)
+
+
+
 *   **Hourglass Filling Effect** ⏳: An hourglass icon where sand appears to drop from the top to the bottom.
 
 ---
@@ -67,6 +74,17 @@ These icons add a subtle touch of motion to draw the user's eye to important inf
 *   **Blinking Eye Icon** 👀: An eye that occasionally blinks, useful for "watch this" or "preview" sections.
 *   **Toggling Switch (On/Off)** 🌗: A visual switch that animates between its "on" and "off" states.
 *   **Pulsating Heart or Star** ❤️: An icon for "Sponsor" or "Featured" sections that has a gentle pulse effect.
+
+
+
+![A pulsating heart](./svg_source_code/pulsating-heart.svg)
+
+
+![A pulsating star](./svg_source_code/pulsating-star.svg)
+
+
+
+
 *   **Ringing Bell Notification** 🔔: A bell icon that shakes or swings to signify notifications or updates.
 *   **Morphing Shape Icon** 💠: An icon that smoothly changes from one shape to another (e.g., square to circle), great for demonstrating concepts like "adaptability" or "transformation."
 
@@ -82,6 +100,10 @@ These animations help explain processes and data flows more effectively than sta
 *   **Simple State Machine Transition** 🔄: A marker that moves between labeled states in a state diagram to show a change in status.
 *   **Client-Server Request/Response** ↔️: An arrow that animates from a "Client" node to a "Server" node and then returns.
 *   **GitHub `git` Flow Visualization** 🌿: A simplified diagram showing commits appearing sequentially on a `main` or `feature` branch.
+
+
+![Animated Git Flow Diagram](./svg_source_code/git-flow.svg)
+
 
 ---
 
@@ -105,21 +127,7 @@ These can make key data points in your documentation more dynamic and engaging.
 *   **Pie Chart Slice Entrance** 🥧: A pie chart where each slice animates into place, either by growing radially or fanning out.
 
 
-
-
-![A bouncing ball](./svg_source_code/bouncing-ball.svg)
-
-
-![A pulsating heart](./svg_source_code/pulsating-heart.svg)
-
-
-![A pulsating star](./svg_source_code/pulsating-star.svg)
-
-
-![Animated Git Flow Diagram](./svg_source_code/git-flow.svg)
-
 ---
-
 
 
 ### References
