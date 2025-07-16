@@ -139,22 +139,6 @@ These can make key data points in your documentation more dynamic and engaging.
 ---
 
 
-### References
-
-*   **MDN Web Docs:**
-    *   [`@keyframes`](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes)
-    *   [`animation`](https://developer.mozilla.org/en-US/docs/Web/CSS/animation)
-    *   [`animation-timing-function`](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function)
-    *   [`transform`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform)
-*   **W3C Specifications:**
-    *   [CSS Animations Module Level 1](https://www.w3.org/TR/css-animations-1/)
-    *   [CSS Animations Module Level 2](https://drafts.csswg.org/css-animations-2/)
-    *   [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/SVG2/)
-
-
----
-
-
 <!-- 
 ```mermaid
 %% Current Mermaid version
@@ -213,3 +197,17 @@ flowchart LR
 >- **Creative Commons Attribution-ShareAlike 4.0 International**: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) [![CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-sa/4.0/) - Legal details in [LICENSE-CC-BY-SA-4.0](THE_PAST/LICENSE-CC-BY-SA-4.0) and at [Creative Commons official site](https://creativecommons.org/licenses/by-sa/4.0/).
 >
 ---
+
+>
+> ### References
+>
+>*   **MDN Web Docs:**
+>    *   [`@keyframes`](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes)
+>    *   [`animation`](https://developer.mozilla.org/en-US/docs/Web/CSS/animation)
+>    *   [`animation-timing-function`](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function)
+>    *   [`transform`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform)
+>*   **W3C Specifications:**
+>    *   [CSS Animations Module Level 1](https://www.w3.org/TR/css-animations-1/)
+>    *   [CSS Animations Module Level 2](https://drafts.csswg.org/css-animations-2/)
+>    *   [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/SVG2/)
+>
