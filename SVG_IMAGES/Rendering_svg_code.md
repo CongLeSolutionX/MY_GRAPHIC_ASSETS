@@ -145,6 +145,7 @@ These can make key data points in your documentation more dynamic and engaging.
     *   [`transform`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform)
 *   **W3C Specifications:**
     *   [CSS Animations Module Level 1](https://www.w3.org/TR/css-animations-1/)
+    *   [CSS Animations Module Level 2](https://drafts.csswg.org/css-animations-2/)
     *   [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/SVG2/)
 
 
