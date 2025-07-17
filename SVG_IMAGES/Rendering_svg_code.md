@@ -53,6 +53,9 @@ These are common UI elements used to provide feedback on an ongoing process.
 *   **Three-Dot "Thinking" Ellipsis** 💬: Three dots that fade in and out sequentially, mimicking a "typing" or "processing" indicator.
 *   **Rotating Gear or Cog** 🛠️: One or more gears spinning, perfect for representing "settings," "configuration," or a "build process."
 *   **Filling Progress Bar** 🟩: A simple rectangle that animates its width or a gradient to show completion from 0% to 100%.
+
+![A progress bar](./svg_source_code/progress-bar.svg)
+
 *   **Bouncing Ball Loader** 🏀: One or more circles bouncing in place, offering a more playful loading state.
 
 
