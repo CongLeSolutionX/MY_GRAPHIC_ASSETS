@@ -51,7 +51,13 @@ These are common UI elements used to provide feedback on an ongoing process.
 *   **Spinning Circle Loader** 🌀: A classic circular progress indicator with a rotating, incomplete border.
 *   **Pulsating Dot Beacon** 🔴: A single dot that gently scales up and down, often used to indicate a "live" or "active" status.
 *   **Three-Dot "Thinking" Ellipsis** 💬: Three dots that fade in and out sequentially, mimicking a "typing" or "processing" indicator.
+
+![Three-dot Thinking ellipsis](./svg_source_code/thinking-ellipsis.svg)
+
 *   **Rotating Gear or Cog** 🛠️: One or more gears spinning, perfect for representing "settings," "configuration," or a "build process."
+
+![Rotating gear](./svg_source_code/rotating-gear.svg)
+
 *   **Filling Progress Bar** 🟩: A simple rectangle that animates its width or a gradient to show completion from 0% to 100%.
 
 ![A progress bar](./svg_source_code/progress-bar.svg)

@@ -1,0 +1,58 @@
+<!-- 
+title: thinking-ellipsis.svg
+author: Cong Le
+version: 1.0
+license(s): MIT, CC BY-SA 4.0
+copyright: Copyright © 2025 Cong Le. All Rights Reserved.
+-->
+
+
+<svg width="60" height="20" viewBox="0 0 60 20" xmlns="http://www.w3.org/2000/svg" fill="#333">
+  <!-- 
+    SVG Author: Cong Le
+    Animation: "Thinking" Ellipsis
+    Method: CSS Keyframes with animation-delay
+  -->
+  <style>
+    /* 1. Define the core animation */
+    @keyframes pop {
+      /* The dot starts invisible and slightly smaller */
+      from {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      /* At the animation's midpoint, it's fully visible and normal size */
+      50% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      /* It fades back out to complete the loop smoothly */
+      to {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+    }
+
+    /* 2. Base style for all dots */
+    .dot {
+      /* Apply the 'pop' animation, make it last 1.4s, and loop forever */
+      animation: pop 1.4s infinite;
+      /* Set the origin for scaling to the center of each dot */
+      transform-origin: center;
+    }
+
+    /* 3. The magic: Stagger the animations with delays */
+    .dot:nth-of-type(2) {
+      animation-delay: 0.2s;
+    }
+
+    .dot:nth-of-type(3) {
+      animation-delay: 0.4s;
+    }
+  </style>
+
+  <!-- The three circles (dots) that will be animated -->
+  <circle class="dot" cx="10" cy="10" r="5" />
+  <circle class="dot" cx="30" cy="10" r="5" />
+  <circle class="dot" cx="50" cy="10" r="5" />
+</svg>
