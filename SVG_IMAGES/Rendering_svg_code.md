@@ -63,6 +63,9 @@ These are common UI elements used to provide feedback on an ongoing process.
 
 *   **Hourglass Filling Effect** ⏳: An hourglass icon where sand appears to drop from the top to the bottom.
 
+
+![Hourglass Filling Effect](./svg_source_code/hourglass.svg)
+
 ---
 
 ### ✨ 2. Informational and Attention-Grabbing Icons
