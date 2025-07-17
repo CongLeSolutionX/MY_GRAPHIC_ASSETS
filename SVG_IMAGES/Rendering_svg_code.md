@@ -56,9 +56,9 @@ These are common UI elements used to provide feedback on an ongoing process.
 *   **Bouncing Ball Loader** 🏀: One or more circles bouncing in place, offering a more playful loading state.
 
 
-
 ![A bouncing ball](./svg_source_code/bouncing-ball.svg)
 
+![Bouncing Ball Loader](./svg_source_code/bouncing-ball-loader.svg)
 
 
 *   **Hourglass Filling Effect** ⏳: An hourglass icon where sand appears to drop from the top to the bottom.
