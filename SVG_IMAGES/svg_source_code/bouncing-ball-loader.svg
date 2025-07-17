@@ -10,8 +10,6 @@ copyright: Copyright © 2025 Cong Le. All Rights Reserved.
   <!-- 
     Animated Bouncing Ball Loader
     Method: CSS @keyframes
-    Author: An AI Assistant
-    License: MIT (Free to use)
   -->
   <style>
     @keyframes bounce {
