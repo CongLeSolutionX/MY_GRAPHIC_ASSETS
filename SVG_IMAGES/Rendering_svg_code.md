@@ -177,6 +177,7 @@ These can make key data points in your documentation more dynamic and engaging.
 *   **Growing Bar Chart** 💹: A simple bar chart where the bars animate their height from zero to their final value upon "loading."
 *   **Pie Chart Slice Entrance** 🥧: A pie chart where each slice animates into place, either by growing radially or fanning out.
 
+![Pie chart](./svg_source_code/pie-chart.svg)
 
 ---
 
