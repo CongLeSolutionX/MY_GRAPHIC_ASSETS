@@ -106,6 +106,8 @@ These icons add a subtle touch of motion to draw the user's eye to important inf
 *   **Ringing Bell Notification** 🔔: A bell icon that shakes or swings to signify notifications or updates.
 *   **Morphing Shape Icon** 💠: An icon that smoothly changes from one shape to another (e.g., square to circle), great for demonstrating concepts like "adaptability" or "transformation."
 
+![Morphing Shape Icon](./svg_source_code/morphing-icon.svg)
+
 ---
 
 
