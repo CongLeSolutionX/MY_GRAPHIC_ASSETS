@@ -89,6 +89,9 @@ These icons add a subtle touch of motion to draw the user's eye to important inf
 
 *   **Waving Hand "Hello"** 👋: A simple hand icon that performs a gentle waving animation.
 *   **Flashing "New" Badge** ✨: A badge with the word "New" that subtly flashes or pulses to highlight a new feature.
+
+![Flashing "New" Badge](./svg_source_code/new-badge.svg)
+
 *   **Blinking Eye Icon** 👀: An eye that occasionally blinks, useful for "watch this" or "preview" sections.
 *   **Toggling Switch (On/Off)** 🌗: A visual switch that animates between its "on" and "off" states.
 
