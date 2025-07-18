@@ -1,0 +1,46 @@
+<!-- 
+title: ringing-bell.svg
+author: Cong Le
+version: 1.0
+license(s): MIT, CC BY-SA 4.0
+copyright: Copyright © 2025 Cong Le. All Rights Reserved.
+-->
+
+<!-- File: ringing-bell.svg -->
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    /*
+      Define the animation keyframes for the ringing motion.
+      The rotation angles decrease over time to simulate damping.
+    */
+    @keyframes ring {
+      0% { transform: rotate(0); }
+      15% { transform: rotate(15deg); }
+      30% { transform: rotate(-15deg); }
+      45% { transform: rotate(10deg); }
+      60% { transform: rotate(-10deg); }
+      75% { transform: rotate(5deg); }
+      85% { transform: rotate(-5deg); }
+      100% { transform: rotate(0); }
+    }
+
+    /*
+      Apply the animation to the bell group.
+    */
+    #bell-group {
+      /* Set the pivot point to the top-center of the bell */
+      transform-origin: 50px 10px;
+      
+      /* Use the 'ring' animation, run it for 2s, loop forever, and use smooth timing */
+      animation: ring 2s infinite ease-in-out;
+    }
+  </style>
+  
+  <!-- The visual elements of the bell, grouped for animation -->
+  <g id="bell-group" fill="#FFD700">
+    <!-- The bell body shape -->
+    <path d="M 50,10 A 40,40 0 0 0 10,50 L 10,70 A 10,10 0 0 0 20,80 L 80,80 A 10,10 0 0 0 90,70 L 90,50 A 40,40 0 0 0 50,10 Z" />
+    <!-- The clapper -->
+    <circle cx="50" cy="75" r="8" />
+  </g>
+</svg>
