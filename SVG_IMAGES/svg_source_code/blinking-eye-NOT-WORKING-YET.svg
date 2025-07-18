@@ -1,0 +1,64 @@
+<!-- 
+title: animated-data-flow.svg
+author: Cong Le
+version: 1.0
+license(s): MIT, CC BY-SA 4.0
+copyright: Copyright © 2025 Cong Le. All Rights Reserved.
+-->
+
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- 
+    Blinking Eye Icon
+    Method: CSS transform scaleY()
+    Author: Cong Le
+  -->
+  <style>
+    /* 
+      The @keyframes rule defines the stages of our animation.
+      We're animating the 'transform' property to create a vertical squash.
+    */
+    @keyframes blink-animation {
+      /* The eye is open (normal scale) for the first 90% of the duration and at the end. */
+      0%, 90%, 100% {
+        transform: scaleY(1);
+      }
+      /* At the 95% mark, the eye rapidly "squashes" to almost nothing, simulating a blink. */
+      95% {
+        transform: scaleY(0.1);
+      }
+    }
+
+    /* 
+      This rule targets the <g> element with the id 'eye-group' 
+      and applies our animation to it.
+    */
+    #eye-group {
+      /* Use the animation defined above */
+      animation-name: blink-animation;
+      /* The full cycle (open, blink, open) takes 4 seconds */
+      animation-duration: 4s;
+      /* Loop the animation forever */
+      animation-iteration-count: infinite;
+    }
+  </style>
+
+  <!-- 
+    We group all parts of the eye in a <g> tag.
+    This allows us to animate the entire eye as one single object.
+    'transform-origin' ensures the scaling happens from the center, which is key.
+   -->
+  <g id="eye-group" transform-origin="center center" style="transform-box: fill-box;">
+    <!-- Top eyelid path -->
+    <path 
+      d="M 10 50 Q 50 20 90 50" 
+      stroke="black" stroke-width="3" fill="none" stroke-linecap="round" 
+    />
+    <!-- Bottom eyelid path -->
+    <path 
+      d="M 10 50 Q 50 80 90 50" 
+      stroke="black" stroke-width="3" fill="none" stroke-linecap="round" 
+    />
+    <!-- The iris and pupil, represented by a simple circle -->
+    <circle cx="50" cy="50" r="12" fill="black" />
+  </g>
+</svg>
