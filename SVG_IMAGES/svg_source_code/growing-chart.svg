@@ -1,0 +1,97 @@
+<!-- 
+title: growing-chart.svg
+author: Cong Le
+version: 1.0
+license(s): MIT, CC BY-SA 4.0
+copyright: Copyright © 2025 Cong Le. All Rights Reserved.
+-->
+
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif" font-size="14px">
+
+  <!-- ============================= -->
+  <!-- ==      CSS ANIMATION      == -->
+  <!-- ============================= -->
+  <style>
+    /* Keyframe for the growing animation */
+    @keyframes grow {
+      from {
+        transform: scaleY(0); /* Start at 0 height */
+      }
+      to {
+        transform: scaleY(1); /* End at full height */
+      }
+    }
+
+    /* Common style for all bars */
+    .bar {
+      /* Sets the origin of the transform to the bottom of the bar */
+      transform-origin: bottom; 
+      
+      /* Animation properties: */
+      animation-name: grow;          /* Use the 'grow' keyframe */
+      animation-duration: 0.5s;      /* Animation lasts half a second */
+      animation-timing-function: ease-out; /* Start fast, end slow */
+      animation-fill-mode: forwards; /* Keep final state after animation */
+    }
+    
+    /* Individual delays for each bar to create a sequential effect */
+    .bar-1 { animation-delay: 0.1s; }
+    .bar-2 { animation-delay: 0.2s; }
+    .bar-3 { animation-delay: 0.3s; }
+    .bar-4 { animation-delay: 0.4s; }
+
+  </style>
+
+  <!-- ============================= -->
+  <!-- ==      SVG ELEMENTS       == -->
+  <!-- ============================= -->
+
+  <!-- Chart Title -->
+  <text x="200" y="30" text-anchor="middle" font-size="20px" font-weight="bold">Project Activity</text>
+
+  <!-- Axes and Gridlines -->
+  <g class="axes" stroke="#a0a0a0" stroke-width="1">
+    <!-- Y-Axis -->
+    <line x1="50" y1="250" x2="50" y2="50" />
+    <!-- X-Axis -->
+    <line x1="50" y1="250" x2="350" y2="250" />
+  </g>
+
+  <!-- Y-Axis Labels and Gridlines -->
+  <g class="labels y-labels" fill="#a0a0a0" text-anchor="end">
+    <text x="40" y="255">0</text>
+    <text x="40" y="205">50</text>
+    <line x1="50" y1="200" x2="350" y2="200" stroke="#e0e0e0" stroke-dasharray="2" />
+    <text x="40" y="155">100</text>
+    <line x1="50" y1="150" x2="350" y2="150" stroke="#e0e0e0" stroke-dasharray="2" />
+    <text x="40" y="105">150</text>
+    <line x1="50" y1="100" x2="350" y2="100" stroke="#e0e0e0" stroke-dasharray="2" />
+    <text x="40" y="55">200</text>
+  </g>
+  
+  <!-- X-Axis Labels -->
+  <g class="labels x-labels" fill="#333" text-anchor="middle">
+    <text x="95" y="270">Commits</text>
+    <text x="165" y="270">Issues</text>
+    <text x="235" y="270">PRs</text>
+    <text x="305" y="270">Stars</text>
+  </g>
+
+  <!-- Data Bars -->
+  <!-- NOTE: The 'y' and 'height' attributes define the FINAL position.
+             The animation handles the transition to this state. -->
+  <g class="bars">
+    <!-- Bar 1: Commits (Value: 150) -->
+    <rect class="bar bar-1" x="70" y="100" width="50" height="150" fill="#4A90E2" />
+
+    <!-- Bar 2: Issues (Value: 80) -->
+    <rect class="bar bar-2" x="140" y="170" width="50" height="80" fill="#F5A623" />
+    
+    <!-- Bar 3: PRs (Value: 40) -->
+    <rect class="bar bar-3" x="210" y="210" width="50" height="40" fill="#50E3C2" />
+    
+    <!-- Bar 4: Stars (Value: 180) -->
+    <rect class="bar bar-4" x="280" y="70" width="50" height="180" fill="#BD10E0" />
+  </g>
+
+</svg>
