@@ -91,6 +91,9 @@ These icons add a subtle touch of motion to draw the user's eye to important inf
 *   **Flashing "New" Badge** ✨: A badge with the word "New" that subtly flashes or pulses to highlight a new feature.
 *   **Blinking Eye Icon** 👀: An eye that occasionally blinks, useful for "watch this" or "preview" sections.
 *   **Toggling Switch (On/Off)** 🌗: A visual switch that animates between its "on" and "off" states.
+
+![toggling switch](./svg_source_code/toggling-switch.svg)
+
 *   **Pulsating Heart or Star** ❤️: An icon for "Sponsor" or "Featured" sections that has a gentle pulse effect.
 
 
