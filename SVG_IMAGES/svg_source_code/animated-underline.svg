@@ -1,0 +1,46 @@
+<!-- 
+title: animated-underline.svg
+author: Cong Le
+version: 1.0
+license(s): MIT, CC BY-SA 4.0
+copyright: Copyright © 2025 Cong Le. All Rights Reserved.
+-->
+
+<svg width="250" height="50" viewBox="0 0 250 50" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .underline {
+      /* The total length of the line is 240 (245 - 5) */
+      /* This creates a dash of length 240 and a gap of length 240 */
+      stroke-dasharray: 240;
+      /* This hides the line by shifting the dash pattern by its full length */
+      stroke-dashoffset: 240;
+      /* Animation: 'draw' name, 1.5s duration, 'ease-out' timing, and 'forwards' to keep the final state */
+      animation: draw 1.5s ease-out forwards;
+    }
+
+    @keyframes draw {
+      /* The end state of the animation: the offset is 0, so the line is fully visible */
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+  </style>
+
+  <text 
+    x="125" y="28" 
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" 
+    font-size="20" 
+    font-weight="600" 
+    fill="#24292e" 
+    text-anchor="middle">
+      My Header
+  </text>
+  
+  <line 
+    class="underline"
+    x1="5" y1="40" 
+    x2="245" y2="40" 
+    stroke="#0366d6" 
+    stroke-width="3" 
+    stroke-linecap="round"/>
+</svg>

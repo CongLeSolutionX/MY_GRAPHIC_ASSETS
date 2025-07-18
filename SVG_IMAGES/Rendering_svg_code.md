@@ -159,6 +159,9 @@ These add a polished, branded touch to a `README.md` file.
 
 *   **Subtle Animated Logo** 🌟: A company or project logo with a slow pulse, a gentle rotation, or a subtle color-shifting effect.
 *   **Animated Header Underline** ✒️: A line that animates drawing itself under a section title.
+
+![Animated Header Underline](./svg_source_code/animated-underline.svg)
+
 *   **Gradient Background Shift** 🌈: A shape or background with a gradient that slowly and smoothly changes its colors over time.
 
 ![Gradient Background Shift](./svg_source_code/gradient-shift.svg)
