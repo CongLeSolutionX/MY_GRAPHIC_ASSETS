@@ -50,6 +50,9 @@ These are common UI elements used to provide feedback on an ongoing process.
 
 *   **Spinning Circle Loader** 🌀: A classic circular progress indicator with a rotating, incomplete border.
 *   **Pulsating Dot Beacon** 🔴: A single dot that gently scales up and down, often used to indicate a "live" or "active" status.
+
+![Pulsating beacon](./svg_source_code/pulsating-beacon.svg)
+
 *   **Three-Dot "Thinking" Ellipsis** 💬: Three dots that fade in and out sequentially, mimicking a "typing" or "processing" indicator.
 
 ![Three-dot Thinking ellipsis](./svg_source_code/thinking-ellipsis.svg)
