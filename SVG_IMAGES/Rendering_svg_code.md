@@ -158,6 +158,9 @@ These animations help explain processes and data flows more effectively than sta
 These add a polished, branded touch to a `README.md` file.
 
 *   **Subtle Animated Logo** 🌟: A company or project logo with a slow pulse, a gentle rotation, or a subtle color-shifting effect.
+
+![Subtle Animated Logo](./svg_source_code/animated-logo.svg)
+
 *   **Animated Header Underline** ✒️: A line that animates drawing itself under a section title.
 
 ![Animated Header Underline](./svg_source_code/animated-underline.svg)
