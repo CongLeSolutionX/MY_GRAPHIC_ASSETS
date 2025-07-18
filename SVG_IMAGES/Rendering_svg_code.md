@@ -49,6 +49,9 @@ source:
 These are common UI elements used to provide feedback on an ongoing process.
 
 *   **Spinning Circle Loader** 🌀: A classic circular progress indicator with a rotating, incomplete border.
+
+![Spinner](./svg_source_code/spinner.svg)
+
 *   **Pulsating Dot Beacon** 🔴: A single dot that gently scales up and down, often used to indicate a "live" or "active" status.
 
 ![Pulsating beacon](./svg_source_code/pulsating-beacon.svg)
