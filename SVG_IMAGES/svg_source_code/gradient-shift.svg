@@ -1,0 +1,54 @@
+<!-- 
+title: gradient-shift.svg
+author: Cong Le
+version: 1.0
+license(s): MIT, CC BY-SA 4.0
+copyright: Copyright © 2025 Cong Le. All Rights Reserved.
+-->
+
+<svg width="100%" height="200" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- 1. DEFINE THE GRADIENT -->
+  <!-- The gradient is defined in the <defs> section so it can be reused. -->
+  <!-- It's 200% wide to allow for the sliding animation. -->
+  <defs>
+    <linearGradient id="background-gradient" x1="0%" y1="0%" x2="200%" y2="0%">
+      <!-- The start and end colors must match for a seamless loop. -->
+      <stop offset="0%" style="stop-color:#1D2B64; stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#F8CDDA; stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1D2B64; stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- 2. DEFINE THE CSS ANIMATION -->
+  <!-- CSS is embedded directly inside the SVG for portability. -->
+  <style>
+    @keyframes gradient-shift {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        /*
+          We move the gradient left by 50% of its total width.
+          Since the gradient is 200% wide, this slides it over by
+          exactly the width of the viewport (100%), creating a perfect loop.
+        */
+        transform: translateX(-50%);
+      }
+    }
+
+    .animated-gradient {
+      /* Apply the animation to any element with this class. */
+      animation: gradient-shift 10s ease-in-out infinite;
+    }
+  </style>
+
+  <!-- 3. CREATE THE VISIBLE SHAPE -->
+  <!-- 
+    This rectangle acts as our canvas.
+    - Its width (1600) is 200% of the viewBox width (800) to match the gradient.
+    - It's filled with the gradient we defined.
+    - The 'animated-gradient' class applies our animation to it.
+  -->
+  <rect x="0" y="0" width="1600" height="200" class="animated-gradient" fill="url(#background-gradient)" />
+</svg>

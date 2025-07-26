@@ -1,0 +1,75 @@
+<svg width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- File name: hourglass.svg | Author: Cong Le | License: CC0 (Public Domain) -->
+  <!-- 
+    This SVG demonstrates an hourglass animation using CSS clip-path.
+    1. The sand shapes are defined.
+    2. Rectangular clip-paths are defined to mask the sand.
+    3. CSS @keyframes animate the position and size of these clip-paths.
+  -->
+  
+  <defs>
+    <!-- Clip-path to reveal the bottom sand (animates filling up) -->
+    <clipPath id="clip-bottom">
+      <rect id="clip-rect-bottom" x="30" y="90" width="40" height="0"/>
+    </clipPath>
+
+    <!-- Clip-path to hide the top sand (animates emptying) -->
+    <clipPath id="clip-top">
+      <rect id="clip-rect-top" x="30" y="10" width="40" height="40"/>
+    </clipPath>
+  </defs>
+
+  <style>
+    /* Animation for the bottom sand's clip-path */
+    @keyframes fill-bottom {
+      from { height: 0; y: 90; }
+      to   { height: 40px; y: 50px; }
+    }
+    
+    /* Animation for the top sand's clip-path */
+    @keyframes empty-top {
+      from { height: 40px; y: 10px; }
+      to   { height: 0; y: 50px; }
+    }
+    
+    /* Animation for the falling sand stream */
+    @keyframes fall {
+      0%   { opacity: 1; }
+      95%  { opacity: 1; }
+      100% { opacity: 0; }
+    }
+
+    #clip-rect-bottom {
+      animation: fill-bottom 5s linear infinite;
+    }
+
+    #clip-rect-top {
+      animation: empty-top 5s linear infinite;
+    }
+    
+    #falling-sand {
+      animation: fall 5s linear infinite;
+    }
+  </style>
+
+  <!-- Layer 1: The Sand (drawn first, so it's in the back) -->
+  <g id="sand">
+    <!-- Top sand pile (will be hidden by clip-path) -->
+    <path id="top-sand" d="M 30 10 H 70 L 50 50 Z" fill="#D2B48C" clip-path="url(#clip-top)"/>
+    <!-- Bottom sand pile (will be revealed by clip-path) -->
+    <path id="bottom-sand" d="M 50 50 L 70 90 H 30 Z" fill="#D2B48C" clip-path="url(#clip-bottom)"/>
+  </g>
+  
+  <!-- Layer 2: The falling stream -->
+  <line id="falling-sand" x1="50" y1="50" x2="50" y2="50" stroke="#D2B48C" stroke-width="2"/>
+
+  <!-- Layer 3: The Glass Outline (drawn last, so it's on top) -->
+  <path id="glass" 
+        d="M 25 10 H 75 L 50 50 L 75 90 H 25 L 50 50 Z" 
+        fill="none" 
+        stroke="black" 
+        stroke-width="3"
+        stroke-linecap="round"
+        stroke-linejoin="round" />
+        
+</svg>

@@ -1,0 +1,62 @@
+<!-- 
+title: toggling-switch.svg
+author: Cong Le
+version: 1.0
+license(s): MIT, CC BY-SA 4.0
+copyright: Copyright © 2025 Cong Le. All Rights Reserved.
+-->
+
+<svg width="80" height="40" viewBox="0 0 80 40" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    /*
+      Keyframes for the switch track's background color.
+      It animates from grey (off) to green (on).
+    */
+    @keyframes toggle-bg {
+      from {
+        fill: #cccccc; /* Off color */
+      }
+      to {
+        fill: #4cd964; /* On color */
+      }
+    }
+
+    /*
+      Keyframes for the sliding knob.
+      We use transform: translateX() for smooth, efficient movement.
+      It moves 40 pixels to the right.
+    */
+    @keyframes slide-knob {
+      from {
+        transform: translateX(0px); /* Initial position */
+      }
+      to {
+        transform: translateX(40px); /* Final position */
+      }
+    }
+
+    /* Style rule for the switch track */
+    #switch-track {
+      animation-name: toggle-bg;
+      animation-duration: 2s;            /* Animation takes 2 seconds per cycle */
+      animation-iteration-count: infinite; /* Loop forever */
+      animation-direction: alternate;      /* Play forwards, then backwards */
+      animation-timing-function: ease-in-out; /* Smooth acceleration/deceleration */
+    }
+
+    /* Style rule for the switch knob */
+    #switch-knob {
+      animation-name: slide-knob;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-timing-function: ease-in-out;
+    }
+  </style>
+
+  <!-- The track of the switch (the "actor") -->
+  <rect id="switch-track" x="0" y="0" width="80" height="40" rx="20" />
+
+  <!-- The sliding knob of the switch (the other "actor") -->
+  <circle id="switch-knob" cx="20" cy="20" r="16" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" />
+</svg>

@@ -1,0 +1,61 @@
+<!-- 
+title: pie-chart.svg
+author: Cong Le
+version: 1.0
+license(s): MIT, CC BY-SA 4.0
+copyright: Copyright © 2025 Cong Le. All Rights Reserved.
+-->
+
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    /* Base styles for all circle elements that act as slices */
+    .slice {
+      fill: none;
+      stroke-width: 40;
+      /* Set the dash pattern to the full circumference */
+      stroke-dasharray: 502.65;
+      /* Start with the dash fully offset (invisible) */
+      stroke-dashoffset: 502.65;
+      /* Apply the 'draw' animation. 'forwards' keeps the final state. */
+      animation: draw 0.5s linear forwards;
+      transform-origin: center; /* Ensure rotation happens from the center */
+    }
+
+    /* Define the animation that uses a CSS variable for the endpoint */
+    @keyframes draw {
+      to {
+        stroke-dashoffset: var(--final-offset);
+      }
+    }
+
+    /* --- Slice 1: Purple (40%) --- */
+    .slice-1 {
+      stroke: #6f42c1;
+      --final-offset: 301.59; /* Final offset for 40% */
+      animation-delay: 0s;   /* Start immediately */
+    }
+
+    /* --- Slice 2: Green (35%) --- */
+    .slice-2 {
+      stroke: #28a745;
+      --final-offset: 326.72; /* Final offset for 35% */
+      transform: rotate(144deg); /* Positioned after the 40% slice */
+      animation-delay: 0.5s;   /* Start after slice 1 finishes */
+    }
+
+    /* --- Slice 3: Orange (25%) --- */
+    .slice-3 {
+      stroke: #fd7e14;
+      --final-offset: 376.99; /* Final offset for 25% */
+      transform: rotate(270deg); /* Positioned after the 35% slice */
+      animation-delay: 1.0s;    /* Start after slice 2 finishes */
+    }
+  </style>
+
+  <!-- This group centers the chart and sets the start point to 12 o'clock -->
+  <g transform="translate(100, 100) rotate(-90)">
+    <circle class="slice slice-1" r="80" cx="0" cy="0" />
+    <circle class="slice slice-2" r="80" cx="0" cy="0" />
+    <circle class="slice slice-3" r="80" cx="0" cy="0" />
+  </g>
+</svg>

@@ -1,0 +1,67 @@
+<!-- 
+title: new-badge.svg
+author: Cong Le
+version: 1.0
+license(s): MIT, CC BY-SA 4.0
+copyright: Copyright © 2025 Cong Le. All Rights Reserved.
+-->
+
+<svg width="60" height="28" viewBox="0 0 60 28" xmlns="http://www.w3.org/2000/svg">
+  <!-- 
+    The <defs> and <style> section contains all the animation logic.
+    GitHub supports CSS animations defined directly inside the SVG.
+  -->
+  <defs>
+    <style>
+      /* 
+        @keyframes defines the animation's "story". 
+        We'll call our story "pulse".
+      */
+      @keyframes pulse {
+        /* Start of the animation: The text is fully visible. */
+        0% { opacity: 1; }
+
+        /* Mid-point: The text fades to 40% opacity. */
+        50% { opacity: 0.4; }
+
+        /* End of the animation: The text returns to full visibility. */
+        100% { opacity: 1; }
+      }
+
+      /* 
+        This class is the "control panel". It applies the animation to any
+        element that has class="badge-animation".
+      */
+      .badge-animation {
+        /* 
+          shorthand: animation: [name] [duration] [timing-function] [iteration-count];
+          - pulse: Use the @keyframes animation named "pulse".
+          - 1.8s: Make one full cycle take 1.8 seconds.
+          - ease-in-out: Makes the fade smooth and gentle.
+          - infinite: Loop the animation forever.
+        */
+        animation: pulse 1.8s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- The visual elements of the badge -->
+  
+  <!-- 1. The background rectangle -->
+  <rect width="60" height="28" rx="8" fill="#D32F2F"/>
+
+  <!-- 2. The text "NEW" -->
+  <text 
+    x="50%" 
+    y="50%" 
+    text-anchor="middle"
+    dominant-baseline="central"
+    fill="white" 
+    font-size="14" 
+    font-weight="bold" 
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+    class="badge-animation"
+  >
+    NEW
+  </text>
+</svg>

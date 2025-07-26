@@ -1,0 +1,83 @@
+<!-- 
+title: client-server-animation.svg
+author: Cong Le
+version: 1.0
+license(s): MIT, CC BY-SA 4.0
+copyright: Copyright © 2025 Cong Le. All Rights Reserved.
+-->
+
+<svg width="400" height="120" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif" font-size="16px">
+    
+    <defs>
+        <marker id="arrowhead-request" markerWidth="10" markerHeight="7" refX="8" refY="3.5" orient="auto" fill="#00796b">
+            <polygon points="0 0, 10 3.5, 0 7" />
+        </marker>
+        <marker id="arrowhead-response" markerWidth="10" markerHeight="7" refX="8" refY="3.5" orient="auto" fill="#f57c00">
+            <polygon points="0 0, 10 3.5, 0 7" />
+        </marker>
+    </defs>
+  
+    <style>
+        /* Animation for the Request Arrow's container */
+        @keyframes request-flow {
+            0%, 100% { opacity: 0; transform: translateX(0px); }
+            10%      { opacity: 1; transform: translateX(0px); }
+            40%      { opacity: 1; transform: translateX(160px); }
+            50%      { opacity: 0; transform: translateX(160px); }
+        }
+
+        /* Animation for the Response Arrow's container */
+        @keyframes response-flow {
+            0%, 50%  { opacity: 0; transform: translateX(0px); }
+            60%      { opacity: 1; transform: translateX(0px); }
+            90%      { opacity: 1; transform: translateX(-160px); }
+            99%,100% { opacity: 0; transform: translateX(-160px); }
+        }
+
+        /* Animation for the Server 'Processing' pulse */
+        @keyframes processing-pulse {
+            0%, 45%, 55%, 100% { transform: scale(1.0); }
+            50% { transform: scale(1.05); }
+        }
+
+        /* Applying the animations */
+        #request-arrow {
+            animation: request-flow 5s infinite ease-in-out;
+        }
+
+        #response-arrow {
+            animation: response-flow 5s infinite ease-in-out;
+        }
+        
+        #server {
+            animation: processing-pulse 5s infinite;
+            transform-origin: center;
+            transform-box: fill-box;
+        }
+    </style>
+
+    <!-- Client Node -->
+    <g id="client" transform="translate(30, 50)">
+        <rect x="0" y="-20" width="80" height="40" rx="5" fill="#e0f7fa" stroke="#00796b" stroke-width="2"/>
+        <text x="40" y="5" text-anchor="middle" fill="#004d40">Client</text>
+    </g>
+
+    <!-- Server Node -->
+    <g id="server" transform="translate(290, 50)">
+        <rect x="0" y="-20" width="80" height="40" rx="5" fill="#fff3e0" stroke="#f57c00" stroke-width="2"/>
+        <text x="40" y="5" text-anchor="middle" fill="#bf360c">Server</text>
+    </g>
+
+    <!-- Request Arrow (Client -> Server) -->
+    <g id="request-arrow" transform="translate(120, 40)" opacity="0">
+        <line x1="0" y1="0" x2="150" y2="0" stroke="#00796b" stroke-width="2.5" marker-end="url(#arrowhead-request)" />
+        <text x="75" y="-8" text-anchor="middle" fill="#00796b" font-size="14px">Request</text>
+    </g>
+    
+    <!-- Response Arrow (Server -> Client) -->
+    <g id="response-arrow" transform="translate(280, 70)" opacity="0">
+        <line x1="0" y1="0" x2="-150" y2="0" stroke="#f57c00" stroke-width="2.5" marker-end="url(#arrowhead-response)" />
+        <text x="-75" y="18" text-anchor="middle" fill="#bf360c" font-size="14px">Response</text>
+    </g>
+
+</svg>

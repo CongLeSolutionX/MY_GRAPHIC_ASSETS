@@ -1,0 +1,62 @@
+<!-- 
+title: animated-data-flow.svg
+author: Cong Le
+version: 1.0
+license(s): MIT, CC BY-SA 4.0
+copyright: Copyright © 2025 Cong Le. All Rights Reserved.
+-->
+
+<svg width="400" height="150" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <!-- CSS Animation Logic -->
+  <style>
+    #data-path {
+      /* Path length is 150. This creates a dash pattern of 150px on, 150px off. */
+      stroke-dasharray: 150; 
+      
+      /* Start with the dash pattern offset, so the line is invisible. */
+      stroke-dashoffset: 150;
+
+      /* 
+        Animation Details:
+        - Name: draw-line
+        - Duration: 2s
+        - Timing: ease-in-out (smooth start and end)
+        - Loop: infinite
+      */
+      animation: draw-line 2s ease-in-out infinite;
+    }
+
+    @keyframes draw-line {
+      /* At the end of the animation, the offset is 0, making the line fully visible. */
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+  </style>
+
+  <!-- Marker definition for the arrowhead -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4A90E2" />
+    </marker>
+  </defs>
+
+  <!-- SVG Diagram Elements -->
+  <!-- Client Node -->
+  <rect x="25" y="50" width="100" height="50" rx="5" fill="#e8f0fe" stroke="#4A90E2" stroke-width="2"/>
+  <text x="50" y="80" font-size="16" fill="#333">Client</text>
+
+  <!-- Server Node -->
+  <rect x="275" y="50" width="100" height="50" rx="5" fill="#e8f0fe" stroke="#4A90E2" stroke-width="2"/>
+  <text x="295" y="80" font-size="16" fill="#333">Server</text>
+
+  <!-- The Path that will be animated -->
+  <path
+    id="data-path"
+    d="M 125 75 H 275"
+    stroke="#4A90E2"
+    stroke-width="3"
+    fill="none"
+    marker-end="url(#arrowhead)"
+  />
+</svg>
